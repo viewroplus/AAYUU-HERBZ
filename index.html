@@ -1470,9 +1470,411 @@
             background-color: var(--dark-green);
             transform: translateY(-3px);
         }
+
+        /* NEW: Loading Animation Styles */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary-green); /* Green background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it's on top */
+            color: var(--white);
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            overflow: hidden; /* Hide overflow for animations */
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green)); /* Colorful gradient background */
+        }
+
+        #loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loading-content {
+            text-align: center;
+            animation: fadeInScale 1s ease-out forwards;
+            animation-delay: 1s; /* Adjusted delay for content animation */
+            opacity: 0;
+            transform: scale(0.9);
+            position: relative;
+            z-index: 2; /* Ensure content is above particles */
+        }
+
+        .loading-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .loading-content p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        /* NEW: Particle Animation */
+        .particle-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background-color: var(--white);
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-float 15s infinite ease-in-out; /* Longer animation duration */
+        }
+
+        .particle:nth-child(1) { 
+            width: 40px; height: 40px; 
+            top: 10%; left: 15%; 
+            animation-delay: 0s; 
+            background-color: var(--light-green); 
+            animation-duration: 12s;
+            --x-start: -10vw; --y-start: 110vh;
+            --x-mid-1: 20vw; --y-mid-1: 70vh; --scale-mid-1: 1; --rotate-mid-1: 90deg;
+            --x-mid-2: 60vw; --y-mid-2: 30vh; --scale-mid-2: 0.8; --rotate-mid-2: 180deg;
+            --x-mid-3: 40vw; --y-mid-3: 50vh; --scale-mid-3: 1.1; --rotate-mid-3: 270deg;
+            --x-end: 110vw; --y-end: -10vh; --scale-end: 0.7; --rotate-end: 360deg;
+        }
+        .particle:nth-child(2) { 
+            width: 60px; height: 60px; 
+            top: 30%; left: 80%; 
+            animation-delay: 2s; 
+            background-color: var(--soft-pink); 
+            animation-duration: 15s;
+            --x-start: 110vw; --y-start: 0vh;
+            --x-mid-1: 70vw; --y-mid-1: 40vh; --scale-mid-1: 0.9; --rotate-mid-1: -45deg;
+            --x-mid-2: 30vw; --y-mid-2: 80vh; --scale-mid-2: 1.3; --rotate-mid-2: -120deg;
+            --x-mid-3: 90vw; --y-mid-3: 20vh; --scale-mid-3: 0.7; --rotate-mid-3: -200deg;
+            --x-end: -10vw; --y-end: 120vh; --scale-end: 1.1; --rotate-end: -300deg;
+        }
+        .particle:nth-child(3) { 
+            width: 50px; height: 50px; 
+            top: 70%; left: 25%; 
+            animation-delay: 4s; 
+            background-color: var(--cream); 
+            animation-duration: 10s;
+            --x-start: 50vw; --y-start: 120vh;
+            --x-mid-1: 80vw; --y-mid-1: 90vh; --scale-mid-1: 1.1; --rotate-mid-1: 60deg;
+            --x-mid-2: 10vw; --y-mid-2: 40vh; --scale-mid-2: 0.9; --rotate-mid-2: 150deg;
+            --x-mid-3: 70vw; --y-mid-3: 10vh; --scale-mid-3: 1.2; --rotate-mid-3: 250deg;
+            --x-end: 0vw; --y-end: -20vh; --scale-end: 0.8; --rotate-end: 350deg;
+        }
+        .particle:nth-child(4) { 
+            width: 70px; height: 70px; 
+            top: 50%; left: 5%; 
+            animation-delay: 6s; 
+            background-color: var(--soft-yellow); 
+            animation-duration: 18s;
+            --x-start: -20vw; --y-start: 50vh;
+            --x-mid-1: 30vw; --y-mid-1: 10vh; --scale-mid-1: 1.2; --rotate-mid-1: 30deg;
+            --x-mid-2: 70vw; --y-mid-2: 90vh; --scale-mid-2: 0.8; --rotate-mid-2: 100deg;
+            --x-mid-3: 10vw; --y-mid-3: 60vh; --scale-mid-3: 1; --rotate-mid-3: 220deg;
+            --x-end: 120vw; --y-end: 30vh; --scale-end: 0.9; --rotate-end: 320deg;
+        }
+        .particle:nth-child(5) { 
+            width: 45px; height: 45px; 
+            top: 85%; left: 90%; 
+            animation-delay: 8s; 
+            background-color: var(--light-green); 
+            animation-duration: 13s;
+            --x-start: 100vw; --y-start: 100vh;
+            --x-mid-1: 60vw; --y-mid-1: 70vh; --scale-mid-1: 1; --rotate-mid-1: -60deg;
+            --x-mid-2: 20vw; --y-mid-2: 30vh; --scale-mid-2: 1.1; --rotate-mid-2: -150deg;
+            --x-mid-3: 80vw; --y-mid-3: 5vh; --scale-mid-3: 0.9; --rotate-mid-3: -250deg;
+            --x-end: -10vw; --y-end: 10vh; --scale-end: 0.8; --rotate-end: -340deg;
+        }
+        .particle:nth-child(6) { 
+            width: 55px; height: 55px; 
+            top: 5%; left: 60%; 
+            animation-delay: 1s; 
+            background-color: var(--cream); 
+            animation-duration: 16s;
+            --x-start: 70vw; --y-start: -10vh;
+            --x-mid-1: 10vw; --y-mid-1: 30vh; --scale-mid-1: 1.3; --rotate-mid-1: 75deg;
+            --x-mid-2: 80vw; --y-mid-2: 70vh; --scale-mid-2: 0.7; --rotate-mid-2: 160deg;
+            --x-mid-3: 30vw; --y-mid-3: 100vh; --scale-mid-3: 1; --rotate-mid-3: 280deg;
+            --x-end: -20vw; --y-end: 80vh; --scale-end: 1.1; --rotate-end: 380deg;
+        }
+        .particle:nth-child(7) { 
+            width: 65px; height: 65px; 
+            top: 60%; left: 40%; 
+            animation-delay: 3s; 
+            background-color: var(--soft-pink); 
+            animation-duration: 11s;
+            --x-start: -5vw; --y-start: 70vh;
+            --x-mid-1: 60vw; --y-mid-1: 10vh; --scale-mid-1: 1.1; --rotate-mid-1: 40deg;
+            --x-mid-2: 20vw; --y-mid-2: 80vh; --scale-mid-2: 0.9; --rotate-mid-2: 120deg;
+            --x-mid-3: 90vw; --y-mid-3: 40vh; --scale-mid-3: 1.2; --rotate-mid-3: 230deg;
+            --x-end: 110vw; --y-end: -5vh; --scale-end: 0.7; --rotate-end: 330deg;
+        }
+        .particle:nth-child(8) { 
+            width: 35px; height: 35px; 
+            top: 20%; left: 50%; 
+            animation-delay: 5s; 
+            background-color: var(--soft-yellow); 
+            animation-duration: 14s;
+            --x-start: 80vw; --y-start: -20vh;
+            --x-mid-1: 40vw; --y-mid-1: 60vh; --scale-mid-1: 0.8; --rotate-mid-1: -70deg;
+            --x-mid-2: 100vw; --y-mid-2: 20vh; --scale-mid-2: 1; --rotate-mid-2: -180deg;
+            --x-mid-3: 50vw; --y-mid-3: 90vh; --scale-mid-3: 1.3; --rotate-mid-3: -280deg;
+            --x-end: -30vw; --y-end: 0vh; --scale-end: 0.9; --rotate-end: -390deg;
+        }
+        /* Added more diverse particles */
+        .particle:nth-child(9) { 
+            width: 75px; height: 75px; 
+            top: 25%; left: 5%; 
+            animation-delay: 0s; 
+            background-color: var(--gold); 
+            animation-duration: 17s;
+            --x-start: -20vw; --y-start: 20vh;
+            --x-mid-1: 10vw; --y-mid-1: 80vh; --scale-mid-1: 1.3; --rotate-mid-1: 50deg;
+            --x-mid-2: 70vw; --y-mid-2: 30vh; --scale-mid-2: 0.9; --rotate-mid-2: 140deg;
+            --x-mid-3: 30vw; --y-mid-3: 90vh; --scale-mid-3: 1.1; --rotate-mid-3: 260deg;
+            --x-end: 110vw; --y-end: 10vh; --scale-end: 0.8; --rotate-end: 350deg;
+        }
+        .particle:nth-child(10) { 
+            width: 30px; height: 30px; 
+            top: 70%; left: 90%; 
+            animation-delay: 2.5s; 
+            background-color: var(--dark-green); 
+            animation-duration: 9s;
+            --x-start: 110vw; --y-start: 70vh;
+            --x-mid-1: 80vw; --y-mid-1: 30vh; --scale-mid-1: 1; --rotate-mid-1: -30deg;
+            --x-mid-2: 40vw; --y-mid-2: 90vh; --scale-mid-2: 1.2; --rotate-mid-2: -100deg;
+            --x-mid-3: 100vw; --y-mid-3: 10vh; --scale-mid-3: 0.8; --rotate-mid-3: -220deg;
+            --x-end: -10vw; --y-end: 50vh; --scale-end: 1.1; --rotate-end: -330deg;
+        }
+        .particle:nth-child(11) { 
+            width: 60px; height: 60px; 
+            top: 40%; left: 10%; 
+            animation-delay: 5s; 
+            background-color: var(--light-brown); 
+            animation-duration: 14s;
+            --x-start: -15vw; --y-start: 40vh;
+            --x-mid-1: 50vw; --y-mid-1: 0vh; --scale-mid-1: 1.1; --rotate-mid-1: 80deg;
+            --x-mid-2: 90vw; --y-mid-2: 60vh; --scale-mid-2: 0.7; --rotate-mid-2: 170deg;
+            --x-mid-3: 20vw; --y-mid-3: 100vh; --scale-mid-3: 1.2; --rotate-mid-3: 290deg;
+            --x-end: 120vw; --y-end: 30vh; --scale-end: 0.9; --rotate-end: 400deg;
+        }
+        .particle:nth-child(12) { 
+            width: 50px; height: 50px; 
+            top: 15%; left: 70%; 
+            animation-delay: 7s; 
+            background-color: var(--soft-pink); 
+            animation-duration: 11s;
+            --x-start: 90vw; --y-start: -5vh;
+            --x-mid-1: 30vw; --y-mid-1: 40vh; --scale-mid-1: 0.9; --rotate-mid-1: -50deg;
+            --x-mid-2: 70vw; --y-mid-2: 80vh; --scale-mid-2: 1.3; --rotate-mid-2: -140deg;
+            --x-mid-3: 0vw; --y-mid-3: 20vh; --scale-mid-3: 0.7; --rotate-mid-3: -260deg;
+            --x-end: 110vw; --y-end: 90vh; --scale-end: 1.1; --rotate-end: -370deg;
+        }
+        .particle:nth-child(13) { 
+            width: 45px; height: 45px; 
+            top: 90%; left: 50%; 
+            animation-delay: 9s; 
+            background-color: var(--light-green); 
+            animation-duration: 16s;
+            --x-start: 50vw; --y-start: 110vh;
+            --x-mid-1: 80vw; --y-mid-1: 60vh; --scale-mid-1: 1; --rotate-mid-1: 70deg;
+            --x-mid-2: 10vw; --y-mid-2: 20vh; --scale-mid-2: 1.1; --rotate-mid-2: 190deg;
+            --x-mid-3: 70vw; --y-mid-3: 80vh; --scale-mid-3: 0.9; --rotate-mid-3: 300deg;
+            --x-end: -20vw; --y-end: 0vh; --scale-end: 0.8; --rotate-end: 410deg;
+        }
+        .particle:nth-child(14) { 
+            width: 65px; height: 65px; 
+            top: 55%; left: 75%; 
+            animation-delay: 1.5s; 
+            background-color: var(--cream); 
+            animation-duration: 13s;
+            --x-start: 110vw; --y-start: 50vh;
+            --x-mid-1: 70vw; --y-mid-1: 10vh; --scale-mid-1: 1.2; --rotate-mid-1: -20deg;
+            --x-mid-2: 30vw; --y-mid-2: 90vh; --scale-mid-2: 0.8; --rotate-mid-2: -110deg;
+            --x-mid-3: 90vw; --y-mid-3: 30vh; --scale-mid-3: 1; --rotate-mid-3: -230deg;
+            --x-end: -10vw; --y-end: 70vh; --scale-end: 0.9; --rotate-end: -340deg;
+        }
+        .particle:nth-child(15) { 
+            width: 35px; height: 35px; 
+            top: 2%; left: 30%; 
+            animation-delay: 4s; 
+            background-color: var(--soft-yellow); 
+            animation-duration: 10s;
+            --x-start: 40vw; --y-start: -20vh;
+            --x-mid-1: 10vw; --y-mid-1: 50vh; --scale-mid-1: 0.8; --rotate-mid-1: 60deg;
+            --x-mid-2: 80vw; --y-mid-2: 10vh; --scale-mid-2: 1.2; --rotate-mid-2: 180deg;
+            --x-mid-3: 20vw; --y-mid-3: 70vh; --scale-mid-3: 1; --rotate-mid-3: 290deg;
+            --x-end: 110vw; --y-end: 20vh; --scale-end: 0.7; --rotate-end: 400deg;
+        }
+        .particle:nth-child(16) { 
+            width: 80px; height: 80px; 
+            top: 80%; left: 10%; 
+            animation-delay: 6.5s; 
+            background-color: var(--gold); 
+            animation-duration: 19s;
+            --x-start: -30vw; --y-start: 80vh;
+            --x-mid-1: 40vw; --y-mid-1: 20vh; --scale-mid-1: 1.1; --rotate-mid-1: -40deg;
+            --x-mid-2: 90vw; --y-mid-2: 70vh; --scale-mid-2: 0.7; --rotate-mid-2: -160deg;
+            --x-mid-3: 0vw; --y-mid-3: 30vh; --scale-mid-3: 1.2; --rotate-mid-3: -270deg;
+            --x-end: 120vw; --y-end: 90vh; --scale-end: 0.9; --rotate-end: -380deg;
+        }
+        .particle:nth-child(17) { 
+            width: 40px; height: 40px; 
+            top: 45%; left: 95%; 
+            animation-delay: 8s; 
+            background-color: var(--dark-green); 
+            animation-duration: 12s;
+            --x-start: 120vw; --y-start: 45vh;
+            --x-mid-1: 80vw; --y-mid-1: 0vh; --scale-mid-1: 0.9; --rotate-mid-1: 90deg;
+            --x-mid-2: 20vw; --y-mid-2: 100vh; --scale-mid-2: 1.3; --rotate-mid-2: 200deg;
+            --x-mid-3: 60vw; --y-mid-3: 30vh; --scale-mid-3: 0.8; --rotate-mid-3: 310deg;
+            --x-end: -10vw; --y-end: 60vh; --scale-end: 1; --rotate-end: 420deg;
+        }
+        .particle:nth-child(18) { 
+            width: 50px; height: 50px; 
+            top: 10%; left: 40%; 
+            animation-delay: 10s; 
+            background-color: var(--light-brown); 
+            animation-duration: 14s;
+            --x-start: 40vw; --y-start: -10vh;
+            --x-mid-1: 0vw; --y-mid-1: 40vh; --scale-mid-1: 1.2; --rotate-mid-1: -60deg;
+            --x-mid-2: 100vw; --y-mid-2: 80vh; --scale-mid-2: 0.8; --rotate-mid-2: -150deg;
+            --x-mid-3: 30vw; --y-mid-3: 10vh; --scale-mid-3: 1.1; --rotate-mid-3: -260deg;
+            --x-end: 80vw; --y-end: 120vh; --scale-end: 0.9; --rotate-end: -370deg;
+        }
+        .particle:nth-child(19) { 
+            width: 70px; height: 70px; 
+            top: 65%; left: 55%; 
+            animation-delay: 0.5s; 
+            background-color: var(--soft-pink); 
+            animation-duration: 17s;
+            --x-start: -10vw; --y-start: 60vh;
+            --x-mid-1: 50vw; --y-mid-1: 10vh; --scale-mid-1: 1; --rotate-mid-1: 30deg;
+            --x-mid-2: 90vw; --y-mid-2: 80vh; --scale-mid-2: 1.2; --rotate-mid-2: 140deg;
+            --x-mid-3: 20vw; --y-mid-3: 40vh; --scale-mid-3: 0.8; --rotate-mid-3: 250deg;
+            --x-end: 110vw; --y-end: 0vh; --scale-end: 1.1; --rotate-end: 360deg;
+        }
+        .particle:nth-child(20) { 
+            width: 30px; height: 30px; 
+            top: 95%; left: 5%; 
+            animation-delay: 3s; 
+            background-color: var(--cream); 
+            animation-duration: 9s;
+            --x-start: 0vw; --y-start: 120vh;
+            --x-mid-1: 40vw; --y-mid-1: 70vh; --scale-mid-1: 0.9; --rotate-mid-1: -20deg;
+            --x-mid-2: 80vw; --y-mid-2: 10vh; --scale-mid-2: 1.1; --rotate-mid-2: -100deg;
+            --x-mid-3: 20vw; --y-mid-3: 90vh; --scale-mid-3: 0.7; --rotate-mid-3: -220deg;
+            --x-end: 100vw; --y-end: -20vh; --scale-end: 1; --rotate-end: -330deg;
+        }
+        .particle:nth-child(21) { 
+            width: 60px; height: 60px; 
+            top: 20%; left: 20%; 
+            animation-delay: 7.5s; 
+            background-color: var(--soft-yellow); 
+            animation-duration: 15s;
+            --x-start: -5vw; --y-start: 10vh;
+            --x-mid-1: 30vw; --y-mid-1: 80vh; --scale-mid-1: 1.2; --rotate-mid-1: 60deg;
+            --x-mid-2: 70vw; --y-mid-2: 20vh; --scale-mid-2: 0.8; --rotate-mid-2: 170deg;
+            --x-mid-3: 10vw; --y-mid-3: 90vh; --scale-mid-3: 1.1; --rotate-mid-3: 280deg;
+            --x-end: 110vw; --y-end: 0vh; --scale-end: 0.9; --rotate-end: 390deg;
+        }
+        .particle:nth-child(22) { 
+            width: 50px; height: 50px; 
+            top: 70%; left: 70%; 
+            animation-delay: 11s; 
+            background-color: var(--light-green); 
+            animation-duration: 10s;
+            --x-start: 90vw; --y-start: 110vh;
+            --x-mid-1: 50vw; --y-mid-1: 60vh; --scale-mid-1: 1; --rotate-mid-1: -45deg;
+            --x-mid-2: 10vw; --y-mid-2: 10vh; --scale-mid-2: 1.2; --rotate-mid-2: -130deg;
+            --x-mid-3: 70vw; --y-mid-3: 80vh; --scale-mid-3: 0.8; --rotate-mid-3: -240deg;
+            --x-end: -20vw; --y-end: 20vh; --scale-end: 1.1; --rotate-end: -350deg;
+        }
+
+        @keyframes particle-float {
+            0% { transform: translate(var(--x-start), var(--y-start)) scale(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; transform: translate(var(--x-mid-1), var(--y-mid-1)) scale(var(--scale-mid-1)) rotate(var(--rotate-mid-1)); }
+            30% { opacity: 0.6; transform: translate(var(--x-mid-2), var(--y-mid-2)) scale(var(--scale-mid-2)) rotate(var(--rotate-mid-2)); }
+            60% { opacity: 0.7; transform: translate(var(--x-mid-3), var(--y-mid-3)) scale(var(--scale-mid-3)) rotate(var(--rotate-mid-3)); }
+            100% { transform: translate(var(--x-end), var(--y-end)) scale(var(--scale-end)) rotate(var(--rotate-end)); opacity: 0; }
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive adjustments for loading screen */
+        @media (max-width: 768px) {
+            .loading-content h1 {
+                font-size: 2.5rem;
+            }
+            .loading-content p {
+                font-size: 1.1rem;
+                max-width: 90%;
+            }
+            .particle {
+                font-size: 40px; /* Adjust leaf size for mobile */
+                animation-duration: 8s; /* Faster animation for mobile */
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- NEW: Loading Screen HTML -->
+    <div id="loading-screen">
+        <div class="particle-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <!-- Added more particles -->
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="loading-content">
+            <h1 class="lang-english">Welcome to AAYUU HERBZ</h1>
+            <h1 class="lang-sinhala">AAYUU HERBZ වෙත සාදරයෙන් පිළිගනිමු</h1>
+            <p class="lang-english">Your journey to natural beauty begins here. Discover Sri Lanka's finest herbal products, crafted with love and tradition.</p>
+            <p class="lang-sinhala">ස්වාභාවික අලංකාරය කරා ඔබගේ ගමන මෙතැනින් ආරම්භ වේ. ශ්‍රී ලංකාවේ හොඳම ශාකසාර නිෂ්පාදන, ආදරයෙන් හා සම්ප්‍රදායෙන් සාදන ලද දෑ සොයා ගන්න.</p>
+        </div>
+    </div>
+
     <!-- Scroll to top button -->
     <div class="scroll-to-top" id="scroll-to-top">↑</div>
 
@@ -2005,7 +2407,7 @@
                     <h3 class="lang-english">Turmeric</h3>
                     <h3 class="lang-sinhala">කහ</h3>
                     <p class="lang-english">Antioxidant-rich, brightens skin and reduces pigmentation.</p>
-                    <p class="lang-sinhala">ප්‍රති-ඔක්සිකාරක ගුණ සහිත, සම දීප්තිමත් කරයි සහ වර්ණකය අඩු කරයි.</p>
+                    <p class="lang-sinhala">ප්‍රති-ඔක්සිකාරක ගුණසහිත, සම දීප්තිමත් කරයි සහ වර්ණකය අඩු කරයි.</p>
                 </div>
                 
                 <!-- Ingredient 4 -->
@@ -2653,6 +3055,17 @@
                 localStorage.setItem('selectedLang', 'si');
             }
         }
+
+        // Hide loading screen after 2 seconds
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrollability
+            }, 4000); // 4000 milliseconds = 4 seconds
+            // Prevent scrolling during loading
+            document.body.style.overflow = 'hidden';
+        });
 
         // Set initial language based on localStorage or default to English
         const initialLang = localStorage.getItem('selectedLang') || 'en';
