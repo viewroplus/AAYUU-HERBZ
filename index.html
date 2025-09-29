@@ -1,0 +1,2927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYUU HERBZ - 100% Sri Lankan Natural Beauty Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-green: #2a7d2e;
+            --light-green: #f0f7f0;
+            --dark-green: #1e5a21;
+            --accent-green: #3a9e40;
+            --earth-brown: #a1887f;
+            --light-brown: #d7ccc8;
+            --cream: #f9f5f0;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-gray: #333333;
+            --text-dark: #2E2E2E;
+            --soft-pink: #F8E9E9;
+            --soft-yellow: #F9F3E3;
+            --gold: #d4af37;
+            --accent-green-rgb: 58, 158, 64;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-green);
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: var(--white);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--accent-green);
+            color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-green);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .logo span {
+            color: var(--earth-brown);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-green);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-green);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            background-color: var(--light-green);
+            border-radius: 20px;
+            padding: 5px;
+        }
+        
+        .language-switcher button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px 15px;
+            font-weight: 500;
+            color: var(--dark-gray);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .language-switcher button.active {
+            background-color: var(--accent-green);
+            color: var(--white);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-green);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.662), rgba(0, 0, 0, 0.629)), url('image/desctop cover4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 70px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        /* NEW: Hero Social Icons */
+        .hero-social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-social-icons .social-icon {
+            display: inline-flex;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: white; /* Set icon color to white */
+            font-size: 24px; /* Adjust icon size */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .hero-social-icons .social-icon:hover {
+            background-color: var(--accent-green);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-social-icons .social-icon img {
+            width: 30px;
+            height: 30px;
+            /* filter: invert(100%); Make icons white */
+        }
+
+        .hero-social-icons .social-icon i {
+            color: white; /* Ensure Font Awesome icons are white */
+        }
+        
+        /* About Section - UPDATED */
+        .about {
+            background-color: var(--light-green);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231e5a21' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover {
+            transform: translateY(-5px);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* NEW: Modern About Section */
+        .modern-about {
+            background-color: var(--white);
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .modern-about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--light-green) 0%, var(--cream) 100%);
+            z-index: -1;
+        }
+        
+        .modern-about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .modern-about-text {
+            padding-right: 20px;
+        }
+        
+        .modern-about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--dark-green);
+            position: relative;
+        }
+        
+        .modern-about-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-green);
+        }
+        
+        .modern-about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .modern-about-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-green);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .modern-about-images {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.image-collage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Common style */
+.collage-img {
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.collage-img:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Top large image */
+.collage-img-1 {
+    width: 100%;
+    height:  calc(50% - 10px);
+    top: 0;
+    left: 0;
+}
+
+/* Bottom left */
+.collage-img-2 {
+    width: calc(50% - 10px); /* reduce width more */
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    margin-right: 10px; /* gap to the right */
+}
+
+/* Bottom right */
+.collage-img-3 {
+    width: calc(50% - 10px);
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    margin-left: 10px; /* gap to the left */
+}
+
+
+.collage-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+
+
+
+
+        
+        /* Products Section */
+         .products {
+            background: #f8f8f8; /* A lighter, more neutral background for a modern feel */
+            padding: 80px 0; /* Add some vertical padding */
+            text-align: center;
+        }
+
+        .products .section-title {
+            font-size: 3rem; /* Slightly larger for impact */
+            margin-bottom: 60px; /* More space below the title */
+            color: var(--dark-green);
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block; /* To center the ::after pseudo-element */
+        }
+        .products .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px; /* Adjust position */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px; /* Slightly wider underline */
+            height: 4px; /* Thicker underline */
+            background-color: var(--accent-green);
+            border-radius: 2px; /* Soften the edges */
+        }
+
+        .product-filters {
+            display: flex; /* Use flexbox for better alignment */
+            justify-content: center; /* Center the filter buttons */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            margin-bottom: 50px;
+            gap: 10px; /* Space between buttons */
+        }
+
+        .product-filters .filter-btn {
+            background-color: #ffffff;
+            color: var(--dark-green);
+            border: 1px solid var(--accent-green);
+            padding: 10px 20px;
+            border-radius: 25px; /* More rounded buttons */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .product-filters .filter-btn:hover,
+        .product-filters .filter-btn.active {
+            background-color: var(--accent-green);
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(var(--accent-green-rgb), 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax for better card size */
+            gap: 35px; /* Increased gap between cards */
+            max-width: 1200px; /* Limit grid width */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 15px; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: left; /* Align text to left within card */
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px); /* More pronounced lift on hover */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px; /* Fixed height for images */
+            overflow: hidden;
+            border-bottom: 1px solid #eee; /* Subtle separator */
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.08); /* Zoom effect on image hover */
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 1; /* Allow info section to grow */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h3 {
+            font-size: 1.4rem;
+            color: var(--dark-green);
+            margin-bottom: 8px;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.3;
+        }
+
+        .product-info p {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            flex-grow: 1; /* Allow description to take space */
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            color: var(--accent-green);
+            font-weight: bold;
+            margin-top: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-card-id {
+            font-size: 0.85rem;
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 600;
+            background-color: var(--cream);
+            padding: 4px 8px;
+            border-radius: 5px;
+            align-self: flex-start;
+            width: fit-content;
+        }
+
+        /* Style for the product ID in the modal */
+        .product-id {
+            font-size: 1rem;
+            color: var(--dark-green);
+            font-weight: bold;
+            margin-bottom: 15px;
+            background-color: var(--light-green);
+            padding: 8px 12px;
+            border-radius: 8px;
+            display: inline-block;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card .btn.see-more-btn {
+            background-color: var(--accent-green);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            border: none; /* Remove default button border */
+            align-self: flex-start; /* Align button to the left */
+        }
+
+        /* Ensure buttons are only block when their language is active */
+        body.english-active .product-card .btn.see-more-btn.lang-english,
+        body.sinhala-active .product-card .btn.see-more-btn.lang-sinhala {
+            display: inline-block;
+        }
+
+        .product-card .btn.see-more-btn:hover {
+            background-color: #309038; /* Slightly darker green on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(var(--accent-green-rgb), 0.4);
+        }
+        /* --- End Improved Product Card --- */
+
+        /* --- Improved Product Modal Design --- */
+        .product-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: rgba(42, 77, 39, 0.18);
+            z-index: 1100;
+            overflow-y: auto;
+            padding: 32px 0;
+            backdrop-filter: blur(2px);
+           scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+
+ 
+        }
+        .modal-content {
+            background: linear-gradient(120deg, #fff 80%, var(--light-green) 100%);
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 22px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 24px 64px rgba(42, 77, 39, 0.18), 0 2px 12px rgba(58, 158, 64, 0.12);
+            animation: fadeInUp 0.5s;
+        }
+
+        /* Increase product modal width for desktop view */
+@media (min-width: 992px) {
+    .modal-content {
+        max-width: 1100px;
+    }
+}
+
+        .close-modal {
+            position: absolute;
+            top: 18px; right: 18px;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--accent-green);
+            background: rgba(255,255,255,0.85);
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            z-index: 10;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 2px 8px rgba(42, 77, 39, 0.07);
+        }
+        .close-modal:hover {
+            background: var(--accent-green);
+            color: #fff;
+            transform: rotate(90deg) scale(1.08);
+        }
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        @media (min-width: 768px) {
+            .modal-body {
+                flex-direction: row;
+                gap: 0;
+            }
+        }
+        .modal-images {
+            flex: 1.1;
+            background: var(--light-green);
+            padding: 32px 24px;
+            border-radius: 22px 0 0 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 320px;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 340px;
+            height: 340px;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(42, 77, 39, 0.10);
+            margin-bottom: 18px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+        .image-thumbnails {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 0 2px;
+
+             scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+        }
+        .thumbnail {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s, transform 0.2s;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(42, 77, 39, 0.07);
+            flex-shrink: 0;
+        }
+        .thumbnail.active {
+            border-color: var(--accent-green);
+            transform: scale(1.08);
+            z-index: 2;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .modal-details {
+            flex: 2;
+            padding: 32px 32px 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .modal-details h2 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: var(--primary-green);
+            font-family: 'Playfair Display', serif;
+        }
+        .modal-details .product-price {
+            font-size: 1.2rem;
+            color: var(--accent-green);
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        .modal-details p {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .modal-details h3 {
+            font-size: 1.1rem;
+            color: var(--primary-green);
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-family: 'Playfair Display', serif;
+        }
+        .modal-details ul {
+            margin-bottom: 10px;
+            padding-left: 18px;
+        }
+        .modal-details ul li {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 6px;
+            list-style: disc inside;
+        }
+        /* --- End Improved Modal --- */
+
+        /* Change Our Products section-title font size to match Our Story */
+.products .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--dark-green);
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+.products .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-green);
+}
+
+        /* Values Section */
+        .values {
+            background-color: var(--cream);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--accent-green);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .value-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--accent-green);
+        }
+        
+        /* Ingredients Section */
+        .ingredients {
+            background-color: var(--light-green);
+        }
+        
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .ingredient-card {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--light-brown);
+        }
+        
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ingredient-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            border: 3px solid var(--light-green);
+            transition: all 0.3s ease;
+        }
+        
+        .ingredient-card:hover .ingredient-image {
+            border-color: var(--accent-green);
+            transform: scale(1.05);
+        }
+        
+        .ingredient-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--cream);
+        }
+        
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-left: 5px solid var(--accent-green);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+           
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 60px;
+            color: var(--light-green);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 3px solid var(--light-green);
+        }
+        
+        .testimonial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--primary-green);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--light-green);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: var(--cream);
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--accent-green);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            background-color: var(--light-green);
+            font-family: 'Source Sans Pro', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #e8f3e8;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--light-green);
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-form {
+            flex: 1;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            margin-right: 15px;
+            color: var(--primary-green);
+            font-size: 20px;
+            background-color: var(--light-green);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover .contact-icon {
+            background-color: var(--accent-green);
+            color: var(--white);
+            transform: rotate(10deg);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent-green);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(58, 158, 64, 0.2);
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            padding: 50px 0 20px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--accent-green), var(--gold), var(--earth-brown));
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .footer-links h3,
+        .footer-contact h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: var(--cream);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--light-brown);
+            padding-left: 5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-green);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .modern-about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .modern-about-text {
+                padding-right: 0;
+            }
+            
+            .modern-about-images {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .modal-body {
+                flex-direction: column;
+            }
+            
+            .modern-about-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .modern-about-images {
+                height: 350px;
+            }
+            
+            .product-filters {
+                gap: 10px;
+            }
+            
+            .filter-btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Language Toggle */
+        .lang-sinhala {
+            display: none; /* Hide Sinhala by default */
+        }
+
+        .lang-english {
+            display: block; /* Show English by default */
+        }
+
+        /* When Sinhala is active, hide English and show Sinhala */
+        body.sinhala-active .lang-english {
+            display: none;
+        }
+
+        body.sinhala-active .lang-sinhala {
+            display: block;
+        }
+
+        /* When English is active, hide Sinhala and show English */
+        body.english-active .lang-sinhala {
+            display: none;
+        }
+
+        body.english-active .lang-english {
+            display: block;
+        }
+        
+        /* Mobile Menu */
+        .mobile-nav {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 70px);
+            background-color: var(--white);
+            z-index: 999;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-nav.active {
+            transform: translateX(0);
+        }
+        
+        .mobile-nav ul {
+            list-style: none;
+        }
+        
+        .mobile-nav ul li {
+            margin-bottom: 15px;
+        }
+        
+        .mobile-nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--light-gray);
+            font-family: 'Source Sans Pro', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav ul li a:hover {
+            color: var(--accent-green);
+            padding-left: 10px;
+        }
+        
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-gray);
+            transition: all 0.3s ease;
+        }
+        
+        .close-menu:hover {
+            color: var(--accent-green);
+            transform: rotate(90deg);
+        }
+        
+        /* Floating Elements */
+        .floating-leaf {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .leaf-1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(15deg);
+        }
+        
+        .leaf-2 {
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(-15deg);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--accent-green);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .scroll-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scroll-to-top">↑</div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                ARYUU <span>HERBZ</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About Us</a></li>
+                    <li><a href="#products" class="nav-link" data-section="products">Our Products</a></li>
+                    <li><a href="#values" class="nav-link" data-section="values">Why Choose Us</a></li>
+                    <li><a href="#ingredients" class="nav-link" data-section="ingredients">Ingredients</a></li>
+                    <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+                    <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                    <li><a href="#faq" class="nav-link" data-section="faq">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <button id="lang-en" class="active">EN</button>
+                <button id="lang-si">සිං</button>
+            </div>
+            
+            <div class="mobile-menu" id="mobile-menu">☰</div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="close-menu" id="close-menu">×</div>
+            <ul>
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About Us</a></li>
+                <li><a href="#products" class="nav-link" data-section="products">Our Products</a></li>
+                <li><a href="#values" class="nav-link" data-section="values">Why Choose Us</a></li>
+                <li><a href="#ingredients" class="nav-link" data-section="ingredients">Ingredients</a></li>
+                <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#faq" class="nav-link" data-section="faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-leaf leaf-1">🌿</div>
+        <div class="floating-leaf leaf-2">🌱</div>
+        <div class="container hero-content">
+            <h1 class="lang-english fade-in">100% Sri Lankan, 100% Natural, 100% Handmade</h1>
+            <h1 class="lang-sinhala fade-in">100% ශ්‍රී ලාංකික, 100% ස්වභාවික, 100% අත්කළ</h1>
+            <p class="lang-english fade-in delay-1">Discover the power of nature with ARYUU HERBZ - premium beauty products crafted from Sri Lanka's finest herbs.</p>
+            <p class="lang-sinhala fade-in delay-1">ARYUU HERBZ සමඟ ස්වභාවයේ බලය අනුභව කරන්න - ශ්‍රී ලංකාවේ ශ්‍රේෂ්ඨතම ශාක වලින් සකස් කරන ලද විශිෂ්ට අලංකාර භාණ්ඩ.</p>
+            <a href="#products" class="btn lang-english fade-in delay-2">Explore Products</a>
+            <a href="#products" class="btn lang-sinhala fade-in delay-2">නිෂ්පාදන ගවේෂණය කරන්න</a>
+            
+            <!-- NEW: Social Media Icons -->
+            <div class="hero-social-icons fade-in delay-3">
+                <a href="https://www.facebook.com/profile.php?id=100063625744419&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aayuu_herbz?igsh=MWpvcmFhbjByODcyYg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aayuuherbz" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern About Us Section -->
+    <section class="modern-about" id="about">
+        <div class="container">
+            <div class="modern-about-content">
+                <div class="modern-about-text">
+                    <h2 class="lang-english">Our Story</h2>
+                    <h2 class="lang-sinhala">අපගේ කතාව</h2>
+                    
+                    <p class="lang-english">ARYUU HERBZ was born from a deep appreciation for Sri Lanka's rich herbal heritage and a commitment to providing pure, natural beauty solutions. Our journey began with a simple belief: nature holds the key to true beauty and wellness.</p>
+                    <p class="lang-sinhala">ARYUU HERBZ හට ආරම්භය වූයේ ශ්‍රී ලංකාවේ සමෘද්ධ ශාකමය උරුමය සහ පිරිසිදු, ස්වාභාවික අලංකාර විසඳුම් සැපයීමට කරන ලද ප්‍රතිඥාවෙනි. අපගේ ගමන ආරම්භ වූයේ සරල විශ්වාසයකින්: සැබෑ අලංකාරය සහ සුවතාවය සඳහා යතුර ස්වභාවයේ ඇත.</p>
+                    
+                    <p class="lang-english">Every ARYUU HERBZ product is carefully handcrafted using traditional methods combined with modern knowledge. We source our ingredients directly from local farmers who share our commitment to sustainable and ethical practices.</p>
+                    <p class="lang-sinhala">සෑම ARYUU HERBZ නිෂ්පාදනයක්ම ප්‍රාථමික ක්‍රමවේදයන් නවීන දැනුම සමඟ ඒකාබද්ධ කර අතින් සාදා ඇත. අපි අපගේ අමුද්‍රව්‍ය සෘජුවම දේශීය ගොවීන්ගෙන් ලබා ගනිමු, ඔවුන් තිරසාර සහ සදාචාරාත්මක පිළිවෙත් සඳහා අපගේ ප්‍රතිඥාව බෙදා ගනී.</p>
+                    
+                    <p class="lang-english">Our mission is to bring the healing power of Sri Lanka's natural herbs to your daily beauty routine, creating products that are not only effective but also environmentally conscious.</p>
+                    <p class="lang-sinhala">අපගේ මෙහෙවර වන්නේ ශ්‍රී ලංකාවේ ස්වාභාවික ශාකවල සුව කිරීමේ බලය ඔබගේ දෛනික අලංකාර චර්යාවට ගෙන ඒමයි, ඵලදායී පමණක් නොව පරිසර හිතකාමී නිෂ්පාදන නිර්මාණය කිරීම.</p>
+                    
+                    <div class="modern-about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label lang-english">Natural</span>
+                            <span class="stat-label lang-sinhala">ස්වාභාවික</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label lang-english">Products</span>
+                            <span class="stat-label lang-sinhala">නිෂ්පාදන</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label lang-english">Happy Customers</span>
+                            <span class="stat-label lang-sinhala">සතුටු ගනුදෙනුකරුවන්</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modern-about-images">
+                    <div class="image-collage">
+                        <div class="collage-img collage-img-1">
+                            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="ARYUU HERBZ Products">
+                        </div>
+                        <div class="collage-img collage-img-2">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Natural Ingredients">
+                        </div>
+                        <div class="collage-img collage-img-3">
+                            <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Handcrafted Process">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title lang-english">Our Products</h2>
+            <h2 class="section-title lang-sinhala">අපගේ නිෂ්පාදන</h2>
+            
+            <!-- Product Filter Buttons -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="lang-english">All Products</span>
+                    <span class="lang-sinhala">සියලුම නිෂ්පාදන</span>
+                </button>
+                <button class="filter-btn" data-filter="herbal-soaps">
+                    <span class="lang-english">Herbal Soaps</span>
+                    <span class="lang-sinhala">ශාකමය සබන්</span>
+                </button>
+                <button class="filter-btn" data-filter="face-gel">
+                    <span class="lang-english">Face Gel</span>
+                    <span class="lang-sinhala">මුහුණු ජෙල්</span>
+                </button>
+                <button class="filter-btn" data-filter="face-body">
+                    <span class="lang-english">Face & Body Products</span>
+                    <span class="lang-sinhala">මුහුණු සහ ශරීර නිෂ්පාදන</span>
+                </button>
+                <button class="filter-btn" data-filter="hair-care">
+                    <span class="lang-english">Hair Care</span>
+                    <span class="lang-sinhala">හිසකෙස් රැකවරණය</span>
+                </button>
+                <button class="filter-btn" data-filter="fat-burning">
+                    <span class="lang-english">Fat Burning</span>
+                    <span class="lang-sinhala">මේදය දහනය</span>
+                </button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Herbal Soaps -->
+                <div class="product-card" data-product="1" data-category="herbal-soaps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Neem & Turmeric Cleansing Bar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Neem & Turmeric Cleansing Bar</h3>
+                        <h3 class="lang-sinhala">කොහොඹ සහ කහ පිරිසිදු කිරීමේ බාර්</h3>
+                        <p class="lang-english">Antibacterial soap with Neem and Turmeric for clear skin</p>
+                        <p class="lang-sinhala">පැහැදිලි සම සඳහා කොහොඹ සහ කහ සහිත ප්‍රතිජීවක සබන්</p>
+                        <div class="product-price">LKR 450</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="1">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="1">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="2" data-category="herbal-soaps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee & Velmadata Body Scrubbing Bar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Coffee & Velmadata Body Scrubbing Bar</h3>
+                        <h3 class="lang-sinhala">කෝපි සහ වෙල්මඩට ශරීර ස්ක්‍රබිං බාර්</h3>
+                        <p class="lang-english">Exfoliating soap with Coffee and Velmadata for smooth skin</p>
+                        <p class="lang-sinhala">සුමට සම සඳහා කෝපි සහ වෙල්මඩට සහිත ඉවත් කිරීමේ සබන්</p>
+                        <div class="product-price">LKR 500</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="2">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="2">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="3" data-category="herbal-soaps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ubtan Cleansing Bar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Ubtan Cleansing Bar</h3>
+                        <h3 class="lang-sinhala">උබ්තන් පිරිසිදු කිරීමේ බාර්</h3>
+                        <p class="lang-english">Traditional cleansing bar with herbs and grains</p>
+                        <p class="lang-sinhala">ශාක සහ ධාන්‍ය සහිත සාම්ප්‍රදායික පිරිසිදු කිරීමේ බාර්</p>
+                        <div class="product-price">LKR 480</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="3">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="3">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="4" data-category="herbal-soaps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Golden Turmeric Cleansing Bar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Golden Turmeric Cleansing Bar</h3>
+                        <h3 class="lang-sinhala">රන්වන් කහ පිරිසිදු කිරීමේ බාර්</h3>
+                        <p class="lang-english">Brightening soap with Turmeric for radiant skin</p>
+                        <p class="lang-sinhala">දීප්තිමත් සම සඳහා කහ සහිත දීප්තිමත් කිරීමේ සබන්</p>
+                        <div class="product-price">LKR 520</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="4">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="4">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="5" data-category="herbal-soaps">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aloevera & Venivel Cleaning Bar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Aloevera & Venivel Cleaning Bar</h3>
+                        <h3 class="lang-sinhala">කෝමාරිකා සහ වෙනිවෙල් පිරිසිදු කිරීමේ බාර්</h3>
+                        <p class="lang-english">Soothing soap with Aloevera and Venivel for sensitive skin</p>
+                        <p class="lang-sinhala">සංවේදී සම සඳහා කෝමාරිකා සහ වෙනිවෙල් සහිත සන්සුන් කිරීමේ සබන්</p>
+                        <div class="product-price">LKR 470</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="5">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="5">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <!-- Face Gel -->
+                <div class="product-card" data-product="6" data-category="face-gel">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fairness Night Gel">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Fairness Night Gel</h3>
+                        <h3 class="lang-sinhala">සුදුමැලි රාත්‍රි ජෙල්</h3>
+                        <p class="lang-english">Overnight brightening gel for even skin tone</p>
+                        <p class="lang-sinhala">සමාන සම වර්ණය සඳහා රාත්‍රිය පුරා දීප්තිමත් කිරීමේ ජෙල්</p>
+                        <div class="product-price">LKR 850</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="6">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="6">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="7" data-category="face-gel">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Under Eye Sleeping Mask">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Under Eye Sleeping Mask</h3>
+                        <h3 class="lang-sinhala">ඇස් යට නිදන මුහුණුවර</h3>
+                        <p class="lang-english">Overnight treatment for dark circles and puffiness</p>
+                        <p class="lang-sinhala">අඳුරු වළලු සහ පuff ුතතාවය සඳහා රාත්‍රිය පුරා ප්‍රතිකාර</p>
+                        <div class="product-price">LKR 750</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="7">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="7">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <!-- Face & Body Products -->
+                <div class="product-card" data-product="8" data-category="face-body">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee & Cinnamon Scrub with Pack">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Coffee & Cinnamon Scrub with Pack</h3>
+                        <h3 class="lang-sinhala">කෝපි සහ කුරුඳු ස්ක්‍රබ් පැක් සමග</h3>
+                        <p class="lang-english">Exfoliating scrub with Coffee and Cinnamon for smooth skin</p>
+                        <p class="lang-sinhala">සුමට සම සඳහා කෝපි සහ කුරුඳු සහිත ඉවත් කිරීමේ ස්ක්‍රබ්</p>
+                        <div class="product-price">LKR 950</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="8">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="8">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="9" data-category="face-body">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Golden Body Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Golden Body Oil</h3>
+                        <h3 class="lang-sinhala">රන්වන් ශරීර තෙල්</h3>
+                        <p class="lang-english">Nourishing body oil with Turmeric for glowing skin</p>
+                        <p class="lang-sinhala">දීප්තිමත් සම සඳහා කහ සහිත පෝෂණ ශරීර තෙල්</p>
+                        <div class="product-price">LKR 1200</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="9">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="9">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="10" data-category="face-body">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ubtan Glowing Pack">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Ubtan Glowing Pack</h3>
+                        <h3 class="lang-sinhala">උබ්තන් දීප්තිමත් පැක්</h3>
+                        <p class="lang-english">Traditional face pack for radiant and even skin tone</p>
+                        <p class="lang-sinhala">දීප්තිමත් සහ සමාන සම වර්ණය සඳහා සාම්ප්‍රදායික මුහුණු පැක්</p>
+                        <div class="product-price">LKR 650</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="10">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="10">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <!-- Hair Care -->
+                <div class="product-card" data-product="11" data-category="hair-care">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Herbal Hair Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Herbal Hair Oil</h3>
+                        <h3 class="lang-sinhala">ශාකමය හිසකෙස් තෙල්</h3>
+                        <p class="lang-english">Nourishing hair oil with natural herbs for healthy hair</p>
+                        <p class="lang-sinhala">සෞඛ්‍ය සම්පන්න හිසකෙස් සඳහා ස්වාභාවික ශාක සහිත පෝෂණ හිසකෙස් තෙල්</p>
+                        <div class="product-price">LKR 850</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="11">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="11">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product="12" data-category="hair-care">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Anti Dandruff Shampoo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Anti Dandruff Shampoo</h3>
+                        <h3 class="lang-sinhala">කෙස් කුණු එරෙහි ෂැම්පු</h3>
+                        <p class="lang-english">Natural shampoo to combat dandruff and scalp issues</p>
+                        <p class="lang-sinhala">කෙස් කුණු සහ හිස්තුවා ගැටළු සමඟ සටන් කිරීමට ස්වාභාවික ෂැම්පු</p>
+                        <div class="product-price">LKR 680</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="12">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="12">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+                
+                <!-- Fat Burning -->
+                <div class="product-card" data-product="13" data-category="fat-burning">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Goraka Churnaya">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="lang-english">Goraka Churnaya</h3>
+                        <h3 class="lang-sinhala">ගොරකා චූර්ණය</h3>
+                        <p class="lang-english">Traditional fat burning powder with Goraka</p>
+                        <p class="lang-sinhala">ගොරකා සහිත සාම්ප්‍රදායික මේදය දහනය කිරීමේ පුඩි</p>
+                        <div class="product-price">LKR 550</div>
+                        <a href="#" class="btn see-more-btn lang-english" data-product="13">View Ingredients</a>
+                        <a href="#" class="btn see-more-btn lang-sinhala" data-product="13">අමුද්‍රව්‍ය බලන්න</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <div class="close-modal" id="close-modal">×</div>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="main-image">
+                        <img id="modal-main-image" src="" alt="Product Image">
+                    </div>
+                    <div class="image-thumbnails" id="image-thumbnails">
+                        <!-- Thumbnails will be added dynamically -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-product-name" class="lang-english"></h2>
+                    <h2 id="modal-product-name-si" class="lang-sinhala"></h2>
+                    <div class="product-price" id="modal-product-price"></div>
+                    <!-- NEW: Courier charges note -->
+                    <p class="lang-english" style="font-size: 0.9em; color: #777; margin-bottom: 10px;">Additional courier charges apply.</p>
+                    <p class="lang-sinhala" style="font-size: 0.9em; color: #777; margin-bottom: 10px;">මීට අමතරව කුරියර් ගාස්තු අය කෙරේ.</p>
+                    <div class="product-id" id="modal-product-id"></div> <!-- Added Product ID display -->
+                    <p id="modal-product-description" class="lang-english"></p>
+                    <p id="modal-product-description-si" class="lang-sinhala"></p>
+                    
+                    <h3 class="lang-english">Key Ingredients</h3>
+                    <h3 class="lang-sinhala">ප්‍රධාන අමුද්‍රව්‍ය</h3>
+                    <ul id="modal-ingredients" class="lang-english">
+                        <!-- Ingredients will be added dynamically -->
+                    </ul>
+                    <ul id="modal-ingredients-si" class="lang-sinhala">
+                        <!-- Ingredients will be added dynamically -->
+                    </ul>
+                    
+                    <h3 class="lang-english">Benefits</h3>
+                    <h3 class="lang-sinhala">ප්‍රතිලාභ</h3>
+                    <ul id="modal-benefits" class="lang-english">
+                        <!-- Benefits will be added dynamically -->
+                    </ul>
+                    <ul id="modal-benefits-si" class="lang-sinhala">
+                        <!-- Benefits will be added dynamically -->
+                    </ul>
+                    
+                    <h3 class="lang-english">How to Use</h3>
+                    <h3 class="lang-sinhala">භාවිතා කරන ආකාරය</h3>
+                    <p id="modal-usage" class="lang-english"></p>
+                    <p id="modal-usage-si" class="lang-sinhala"></p>
+
+                    <!-- NEW: Application Form -->
+                    <h3 class="lang-english" style="margin-top: 30px;">Place Your Order</h3>
+                    <h3 class="lang-sinhala" style="margin-top: 30px;">ඔබගේ ඇණවුම ලබා දෙන්න</h3>
+                    <form id="order-form" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                        <input type="hidden" id="form-product-name-en" name="productNameEn">
+                        <input type="hidden" id="form-product-name-si" name="productNameSi">
+                        <input type="hidden" id="form-product-id" name="productId">
+
+                        <div class="form-group">
+                            <label for="full-name" class="lang-english">Full Name:</label>
+                            <label for="full-name" class="lang-sinhala">සම්පූර්ණ නම:</label>
+                            <input type="text" id="full-name" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="home-address" class="lang-english">Home Address:</label>
+                            <label for="home-address" class="lang-sinhala">නිවසේ ලිපිනය:</label>
+                            <textarea id="home-address" name="homeAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-number" class="lang-english">Mobile Number:</label>
+                            <label for="mobile-number" class="lang-sinhala">ජංගම දුරකථන අංකය:</label>
+                            <input type="tel" id="mobile-number" name="mobileNumber" pattern="[0-9]{10}" placeholder="e.g. 07XXXXXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity" class="lang-english">Quantity:</label>
+                            <label for="quantity" class="lang-sinhala">ප්‍රමාණය:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn lang-english" id="order-whatsapp-btn-en">Order via WhatsApp</button>
+                        <button type="submit" class="btn lang-sinhala" id="order-whatsapp-btn-si">WhatsApp හරහා ඇණවුම් කරන්න</button>
+                    </form>
+
+                    <!-- NEW: Agent contact note -->
+                    <p class="lang-english" style="margin-top: 20px; text-align: center; font-weight: bold; color: var(--primary-green);">Our agent will contact you within 24 hours to confirm your order.</p>
+                    <p class="lang-sinhala" style="margin-top: 20px; text-align: center; font-weight: bold; color: var(--primary-green);">ඔබගේ ඇණවුම තහවුරු කිරීම සඳහා අපගේ නියෝජිතයෙකු පැය 24ක් ඇතුළත ඔබව සම්බන්ධ කර ගනු ඇත.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="values" id="values">
+        <div class="container">
+            <h2 class="section-title lang-english">Why Choose Us</h2>
+            <h2 class="section-title lang-sinhala">ඇයි අප තෝරා ගත යුතුද?</h2>
+            
+            <div class="values-grid">
+                <!-- Value 1 -->
+                <div class="value-card">
+                    <div class="value-icon">🌿</div>
+                    <h3 class="lang-english">100% Natural Ingredients</h3>
+                    <h3 class="lang-sinhala">100% ස්වාභාවික අමුද්‍රව්‍ය</h3>
+                    <p class="lang-english">We use only pure, natural ingredients sourced from Sri Lanka's rich biodiversity.</p>
+                    <p class="lang-sinhala">අපි භාවිතා කරන්නේ ශ්‍රී ලංකාවේ සමෘද්ධ ජීව විවිධත්වයෙන් ලබාගත් පිරිසිදු, ස්වාභාවික අමුද්‍රව්‍ය පමණි.</p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="value-card">
+                    <div class="value-icon">🤲</div>
+                    <h3 class="lang-english">Handmade with Love</h3>
+                    <h3 class="lang-sinhala">ප්‍රේමයෙන් අත්කළ</h3>
+                    <p class="lang-english">Each product is carefully crafted by hand, ensuring quality and attention to detail.</p>
+                    <p class="lang-sinhala">සෑම නිෂ්පාදනයක්ම අතින් ප්‍රවේශමෙන් සකස් කර ඇත, ගුණාත්මකභාවය සහ විස්තර සඳහා අවධානය සහතික කරයි.</p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="value-card">
+                    <div class="value-icon">🌏</div>
+                    <h3 class="lang-english">Eco-friendly & Sustainable</h3>
+                    <h3 class="lang-sinhala">පාරිසරික හිතකාමී සහ තිරසාර</h3>
+                    <p class="lang-english">We are committed to sustainable practices and eco-friendly packaging.</p>
+                    <p class="lang-sinhala">අපි තිරසාර පිළිවෙත් සහ පාරිසරික හිතකාමී ඇසුරුම් කිරීම සඳහා ප්‍රතිඥාවක් ලබා දී ඇත්තෙමු.</p>
+                </div>
+                
+                <!-- Value 4 -->
+                <div class="value-card">
+                    <div class="value-icon">🇱🇰</div>
+                    <h3 class="lang-english">Proudly Sri Lankan</h3>
+                    <h3 class="lang-sinhala">ගර්වයෙන් ශ්‍රී ලාංකික</h3>
+                    <p class="lang-english">Supporting local communities and celebrating Sri Lanka's herbal heritage.</p>
+                    <p class="lang-sinhala">දේශීය ප්‍රජාවන්ට සහාය වීම සහ ශ්‍රී ලංකාවේ ශාකමය උරුමය සමරමින්.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients" id="ingredients">
+        <div class="container">
+            <h2 class="section-title lang-english">Herbal Wisdom</h2>
+            <h2 class="section-title lang-sinhala">ශාකමය ඥානය</h2>
+            
+            <div class="ingredients-grid">
+                <!-- Ingredient 1 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Neem">
+                    </div>
+                    <h3 class="lang-english">Neem</h3>
+                    <h3 class="lang-sinhala">කොහොඹ</h3>
+                    <p class="lang-english">Antibacterial properties help combat acne and skin infections.</p>
+                    <p class="lang-sinhala">ප්‍රතිජීවක ගුණාංග කුරුලෑ සහ සමේ ආසාදන සමඟ සටන් කිරීමට උපකාරී වේ.</p>
+                </div>
+                
+                <!-- Ingredient 2 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Aloe Vera">
+                    </div>
+                    <h3 class="lang-english">Aloe Vera</h3>
+                    <h3 class="lang-sinhala">කෝමාරිකා</h3>
+                    <p class="lang-english">Soothes and hydrates skin, promoting healing and reducing inflammation.</p>
+                    <p class="lang-sinhala">සම සන්සුන් කර ජලය සපයයි, සුව කිරීම ප්‍රවර්ධනය කරයි සහ දැවිල්ල අඩු කරයි.</p>
+                </div>
+                
+                <!-- Ingredient 3 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Turmeric">
+                    </div>
+                    <h3 class="lang-english">Turmeric</h3>
+                    <h3 class="lang-sinhala">කහ</h3>
+                    <p class="lang-english">Antioxidant-rich, brightens skin and reduces pigmentation.</p>
+                    <p class="lang-sinhala">ප්‍රති-ඔක්සිකාරක ගුණ සහිත, සම දීප්තිමත් කරයි සහ වර්ණකය අඩු කරයි.</p>
+                </div>
+                
+                <!-- Ingredient 4 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sandalwood">
+                    </div>
+                    <h3 class="lang-english">Sandalwood</h3>
+                    <h3 class="lang-sinhala">සැන්ඩල් කොල්ලු</h3>
+                    <p class="lang-english">Cooling effect helps reduce skin irritation and provides a natural glow.</p>
+                    <p class="lang-sinhala">සිසිල් බලපෑම සමේ කිසිසේත්තාවය අඩු කිරීමට උපකාරී වන අතර ස්වාභාවික දීප්තියක් ලබා දෙයි.</p>
+                </div>
+                
+                <!-- Ingredient 5 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gotukola">
+                    </div>
+                    <h3 class="lang-english">Gotukola</h3>
+                    <h3 class="lang-sinhala">ගොටුකොල</h3>
+                    <p class="lang-english">Stimulates collagen production and improves skin elasticity.</p>
+                    <p class="lang-sinhala">කොලාජන් නිෂ්පාදනය උත්තේජනය කරයි සහ සමේ නම්යශීලීභාවය වැඩි දියුණු කරයි.</p>
+                </div>
+                
+                <!-- Ingredient 6 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coconut">
+                    </div>
+                    <h3 class="lang-english">Coconut</h3>
+                    <h3 class="lang-sinhala">පොල්</h3>
+                    <p class="lang-english">Deeply moisturizes and nourishes both skin and hair.</p>
+                    <p class="lang-sinhala">සම සහ හිසකෙස් ගැඹුරින් තෙතමනය සපයයි සහ පෝෂණය කරයි.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title lang-english">What Our Customers Say</h2>
+            <h2 class="section-title lang-sinhala">අපගේ ගනුදෙනුකරුවන් කියන්නේ</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Customer">
+                    </div>
+                    <p class="testimonial-text lang-english">"ARYUU HERBZ products have transformed my skin! The herbal face cream cleared my acne and made my skin glow naturally. I love that it's 100% natural and handmade in Sri Lanka."</p>
+                    <p class="testimonial-text lang-sinhala">"ARYUU HERBZ නිෂ්පාදන මගේ සම පරිවර්තනය කර ඇත! ශාකමය මුහුණු ක්‍රීම් මගේ කුරුලෑ පිරිසිදු කර මගේ සම ස්වාභාවිකව දීප්තිමත් කළේය. එය 100% ස්වාභාවික සහ ශ්‍රී ලංකාවේ අත්කළ බව මම ආදරය කරමි."</p>
+                    <p class="testimonial-author">- Priyanthi S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title lang-english">Our Gallery</h2>
+            <h2 class="section-title lang-sinhala">අපගේ ගැලරිය</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title lang-english">Frequently Asked Questions</h2>
+            <h2 class="section-title lang-sinhala">නිතර අසන ප්‍රශ්න</h2>
+            
+            <div class="faq-list">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-english">Are your products safe for all skin types?</span>
+                        <span class="lang-sinhala">ඔබගේ නිෂ්පාදන සියලු සම් වර්ග සඳහා ආරක්ෂිතද?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-english">Yes! Our products are made from 100% natural ingredients and are gentle enough for all skin types, including sensitive skin. However, we recommend doing a patch test before first use.</p>
+                        <p class="lang-sinhala">ඔව්! අපගේ නිෂ්පාදන 100% ස්වාභාවික අමුද්‍රව්‍ය වලින් සාදා ඇති අතර සංවේදී සම ඇතුළු සියලු සම් වර්ග සඳහා ප්‍රමාණවත් ලෙස මෘදු වේ. කෙසේ වෙතත්, පළමු භාවිතයට පෙර පැච් පරීක්ෂණයක් කිරීම අපි නිර්දේශ කරමු.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-english">How can I place an order?</span>
+                        <span class="lang-sinhala">මම ඇණවුමක් කරන්නේ කෙසේද?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-english">Currently, you can place orders by contacting us directly through WhatsApp, Facebook, or by calling our hotline. We're working on an online store for easier ordering.</p>
+                        <p class="lang-sinhala">දැනට, ඔබට WhatsApp, Facebook හරහා හෝ අපගේ හොට්ලයින් අමතා අප හා සෘජුවම සම්බන්ධ වී ඇණවුම් කළ හැකිය. පහසු ඇණවුම් කිරීම සඳහා අපි අන්තර්ජාල වෙළඳසැලක් සංවර්ධනය කරමින් සිටිමු.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-english">Do you offer international shipping?</span>
+                        <span class="lang-sinhala">ඔබ ජාත්‍යන්තර නැව්ගත කිරීම් ලබා දෙනවාද?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-english">Yes, we ship internationally! Shipping costs and delivery times vary by location. Contact us for specific details about shipping to your country.</p>
+                        <p class="lang-sinhala">ඔව්, අපි ජාත්‍යන්තරව නැව්ගත කරන්නෙමු! නැව්ගත කිරීමේ පිරිවැය සහ බෙදාහැරීමේ කාලයන් ස්ථානය අනුව වෙනස් වේ. ඔබේ රටට නැව්ගත කිරීම පිළිබඳ විශේෂිත විස්තර සඳහා අප හා සම්බන්ධ වන්න.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-english">How long does delivery take within Sri Lanka?</span>
+                        <span class="lang-sinhala">ශ්‍රී ලංකාව තුළ බෙදාහැරීමට කොපමණ කාලයක් ගතවේද?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-english">For orders within Sri Lanka, delivery typically takes 2-5 business days depending on your location.</p>
+                        <p class="lang-sinhala">ශ්‍රී ලංකාව තුළ ඇණවුම් සඳහා, බෙදාහැරීම සාමාන්‍යයෙන් ඔබේ ස්ථානය අනුව ව්‍යාපාරික දින 2-5 ක් ගනී.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title lang-english">Contact Us</h2>
+            <h2 class="section-title lang-sinhala">අප හා සම්බන්ධ වන්න</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="lang-english">Get in Touch</h3>
+                    <h3 class="lang-sinhala">සම්බන්ධ වන්න</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4 class="lang-english">Email</h4>
+                            <h4 class="lang-sinhala">විද්‍යුත් තැපෑල</h4>
+                            <p>info@aryuuherbz.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4 class="lang-english">Phone / WhatsApp</h4>
+                            <h4 class="lang-sinhala">දුරකථන / WhatsApp</h4>
+                            <p>+94 77 123 4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 class="lang-english">Address</h4>
+                            <h4 class="lang-sinhala">ලිපිනය</h4>
+                            <p class="lang-english">123 Herbal Lane, Kandy, Sri Lanka</p>
+                            <p class="lang-sinhala">123 ශාකමය පාර, මහනුවර, ශ්‍රී ලංකාව</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100063625744419&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank"><span>FB</span></a>
+                        <a href="https://www.instagram.com/aayuu_herbz?igsh=MWpvcmFhbjByODcyYg==" target="_blank"><span>IG</span></a>
+                        <a href="https://www.tiktok.com/@aayuuherbz" target="_blank"><span>TK</span></a>
+                        <a href="#"><span>YT</span></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="lang-english">Send us a Message</h3>
+                    <h3 class="lang-sinhala">අපට පණිවිඩයක් එවන්න</h3>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="lang-english">Your Name</label>
+                            <label for="name" class="lang-sinhala">ඔබගේ නම</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="lang-english">Your Email</label>
+                            <label for="email" class="lang-sinhala">ඔබගේ විද්‍යුත් තැපෑල</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="lang-english">Your Message</label>
+                            <label for="message" class="lang-sinhala">ඔබගේ පණිවිඩය</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn lang-english">Send Message</button>
+                        <button type="submit" class="btn lang-sinhala">පණිවිඩය යවන්න</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">ARYUU HERBZ</div>
+                    <p class="lang-english">100% Sri Lankan, 100% Natural, 100% Handmade beauty products crafted with love from nature's finest herbs.</p>
+                    <p class="lang-sinhala">100% ශ්‍රී ලාංකික, 100% ස්වාභාවික, 100% අත්කළ අලංකාර භාණ්ඩ ස්වභාවයේ ශ්‍රේෂ්ඨතම ශාක වලින් ප්‍රේමයෙන් සකස් කරන ලදී.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="lang-english">Quick Links</h3>
+                    <h3 class="lang-sinhala">ක්ෂණික සබැඳි</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">About Us</a></li>
+                        <li><a href="#products" class="nav-link" data-section="products">Our Products</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="lang-english">Contact Info</h3>
+                    <h3 class="lang-sinhala">සම්බන්ධතා තොරතුරු</h3>
+                    <p class="lang-english">Email: info@aryuuherbz.com</p>
+                    <p class="lang-english">Phone: +94 77 123 4567</p>
+                    <p class="lang-sinhala">විද්‍යුත් තැපෑල: info@aryuuherbz.com</p>
+                    <p class="lang-sinhala">දුරකථන: +94 77 123 4567</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p class="lang-english">© 2025 ARYUU HERBZ – All Rights Reserved.</p>
+                <p class="lang-sinhala">© 2025 ARYUU HERBZ – සියලුම හිමිකම් ඇවිරිණි.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product Data
+        const products = {
+            1: {
+                name: {
+                    en: "Neem & Turmeric Cleansing Bar",
+                    si: "කොහොඹ සහ කහ පිරිසිදු කිරීමේ බාර්"
+                },
+                price: "LKR 450",
+                description: {
+                    en: "Antibacterial soap with Neem and Turmeric for clear skin. This cleansing bar combines the antibacterial properties of Neem with the brightening effects of Turmeric to give you clean and radiant skin.",
+                    si: "පැහැදිලි සම සඳහා කොහොඹ සහ කහ සහිත ප්‍රතිජීවක සබන්. මෙම පිරිසිදු කිරීමේ බාර් කොහොඹ හි ප්‍රතිජීවක ගුණාංග කහ හි දීප්තිමත් කිරීමේ බලපෑම් සමඟ ඒකාබද්ධ කර ඔබට පිරිසිදු සහ දීප්තිමත් සමක් ලබා දෙයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Neem leaves extract", "Turmeric powder", "Coconut oil", "Olive oil", "Essential oils"],
+                    si: ["කොහොඹ කොළ උද්ධ්‍රේක", "කහ පුඩි", "පොල් තෙල්", "ඔලිව් තෙල්", "අත්‍යවශ්‍ය තෙල්"]
+                },
+                benefits: {
+                    en: ["Reduces acne and skin inflammation", "Brightens skin complexion", "Antibacterial properties", "Suitable for all skin types", "Natural and gentle cleansing"],
+                    si: ["කුරුලෑ සහ සමේ දැවිල්ල අඩු කරයි", "සමේ වර්ණය දීප්තිමත් කරයි", "ප්‍රතිජීවක ගුණාංග", "සියලු සම් වර්ග සඳහා සුදුසුය", "ස්වාභාවික සහ මෘදු පිරිසිදු කිරීම"]
+                },
+                usage: {
+                    en: "Wet the soap bar and lather in hands or directly on skin. Gently massage over face and body, then rinse thoroughly. Use daily for best results.",
+                    si: "සබන් බාර් තෙත් කර අත් වල හෝ සෘජුවම සම මත පිඟන් කරන්න. මුහුණ සහ ශරීරය මත ප්‍රවේශමෙන් මසා, පසුව සම්පූර්ණයෙන් වතුර ගසා ගන්න. හොඳම ප්‍රතිඵල සඳහා දිනපතා භාවිතා කරන්න."
+                }
+            },
+            2: {
+                name: {
+                    en: "Coffee & Velmadata Body Scrubbing Bar",
+                    si: "කෝපි සහ වෙල්මඩට ශරීර ස්ක්‍රබිං බාර්"
+                },
+                price: "LKR 500",
+                description: {
+                    en: "Exfoliating soap with Coffee and Velmadata for smooth skin. This scrubbing bar helps remove dead skin cells and improve skin texture for a smoother appearance.",
+                    si: "සුමට සම සඳහා කෝපි සහ වෙල්මඩට සහිත ඉවත් කිරීමේ සබන්. මෙම ස්ක්‍රබිං බාර් මළ සම සෛල ඉවත් කිරීමට සහ සමේ වයනය වැඩි දියුණු කිරීමට උපකාරී වේ."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Coffee grounds", "Velmadata powder", "Coconut oil", "Shea butter", "Essential oils"],
+                    si: ["කෝපි ග්‍රව", "වෙල්මඩට පුඩි", "පොල් තෙල්", "ෂී බටර්", "අත්‍යවශ්‍ය තෙල්"]
+                },
+                benefits: {
+                    en: ["Exfoliates dead skin cells", "Improves skin texture", "Stimulates blood circulation", "Reduces appearance of cellulite", "Leaves skin soft and smooth"],
+                    si: ["මළ සම සෛල ඉවත් කරයි", "සමේ වයනය වැඩි දියුණු කරයි", "රුධිර සංසරණය උත්තේජනය කරයි", "සෙලුලයිට් පෙනුම අඩු කරයි", "සම මෘදු සහ සුමට කරයි"]
+                },
+                usage: {
+                    en: "Apply to damp skin in circular motions, focusing on rough areas like elbows, knees, and feet. Rinse thoroughly. Use 2-3 times per week for best results.",
+                    si: "වෘත්තාකාර චලනයන් වලින් තෙත් සමට යොදන්න, විනිවිද පෙනෙන ප්‍රදේශ වලට අවධානය යොමු කරන්න. සම්පූර්ණයෙන් වතුර ගසා ගන්න. හොඳම ප්‍රතිඵල සඳහා සතියකට 2-3 වතාවක් භාවිතා කරන්න."
+                }
+            },
+            3: {
+                name: {
+                    en: "Ubtan Cleansing Bar",
+                    si: "උබ්තන් පිරිසිදු කිරීමේ බාර්"
+                },
+                price: "LKR 480",
+                description: {
+                    en: "Traditional cleansing bar with herbs and grains. This Ubtan-based soap uses ancient Ayurvedic ingredients to cleanse and nourish your skin naturally.",
+                    si: "ශාක සහ ධාන්‍ය සහිත සාම්ප්‍රදායික පිරිසිදු කිරීමේ බාර්. මෙම උබ්තන්-පදනම් කරගත් සබන් පුරාණ ආයුර්වේද අමුද්‍රව්‍ය භාවිතා කර ඔබේ සම ස්වාභාවිකව පිරිසිදු කර පෝෂණය කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Gram flour", "Turmeric powder", "Sandalwood powder", "Rose powder", "Milk powder"],
+                    si: ["කජු පිටි", "කහ පුඩි", "සැන්ඩල් කොල්ලු පුඩි", "රෝස පුඩි", "කිරි පුඩි"]
+                },
+                benefits: {
+                    en: ["Deep cleanses pores", "Brightens skin tone", "Reduces tan and pigmentation", "Soothes skin irritation", "Traditional Ayurvedic formula"],
+                    si: ["ගැඹුරුවෙන් සිදුරු පිරිසිදු කරයි", "සම වර්ණය දීප්තිමත් කරයි", "තද සහ වර්ණකය අඩු කරයි", "සමේ කිසිසේත්තාවය සන්සුන් කරයි", "සාම්ප්‍රදායික ආයුර්වේද සූත්‍රය"]
+                },
+                usage: {
+                    en: "Wet the soap bar and create a rich lather. Massage gently onto wet skin in circular motions. Rinse thoroughly and pat dry. Use daily for radiant skin.",
+                    si: "සබන් බාර් තෙත් කර පොහොසත් පිඟන් සාදා ගන්න. තෙත් සම මත වෘත්තාකාර චලනයන් වලින් ප්‍රවේශමෙන් මසා දමන්න. සම්පූර්ණයෙන් වතුර ගසා ගන්න. හොඳම ප්‍රතිඵල සඳහා දිනපතා භාවිතා කරන්න."
+                }
+            },
+            4: {
+                name: {
+                    en: "Golden Turmeric Cleansing Bar",
+                    si: "රන්වන් කහ පිරිසිදු කිරීමේ බාර්"
+                },
+                price: "LKR 520",
+                description: {
+                    en: "Brightening soap with Turmeric for radiant skin. This golden soap bar harnesses the power of Turmeric to give your skin a natural glow and even tone.",
+                    si: "දීප්තිමත් සම සඳහා කහ සහිත දීප්තිමත් කිරීමේ සබන්. මෙම රන්වන් සබන් බාර් ඔබේ සමට ස්වාභාවික දීප්තියක් සහ සමාන වර්ණයක් ලබා දීම සඳහා කහ හි බලය භාවිතා කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Turmeric powder", "Saffron extract", "Almond oil", "Honey", "Essential oils"],
+                    si: ["කහ පුඩි", "කුංකුම උද්ධ්‍රේක", "ආමන්ඩ් තෙල්", "පැණි", "අත්‍යවශ්‍ය තෙල්"]
+                },
+                benefits: {
+                    en: ["Brightens skin complexion", "Reduces dark spots and pigmentation", "Antioxidant properties", "Improves skin elasticity", "Provides natural glow"],
+                    si: ["සමේ වර්ණය දීප්තිමත් කරයි", "අඳුරු පැල්ලම් සහ වර්ණකය අඩු කරයි", "ප්‍රති-ඔක්සිකාරක ගුණාංග", "සමේ නම්යශීලීභාවය වැඩි දියුණු කරයි", "ස්වාභාවික දීප්තිය ලබා දෙයි"]
+                },
+                usage: {
+                    en: "Wet the soap and work into a lather. Apply to face and body, massaging gently. Rinse thoroughly. For enhanced brightening, leave the lather on for 1-2 minutes before rinsing.",
+                    si: "සබන් තෙත් කර පිඟන් සාදා ගන්න. මුහුණ සහ ශරීරයට යොදා, ප්‍රවේශමෙන් මසා දමන්න. සම්පූර්ණයෙන් වතුර ගසා ගන්න. වැඩි දියුණු කළ දීප්තිමත් කිරීම සඳහා, වතුර ගසා ගැනීමට පෙර පිඟන් මිනිත්තු 1-2 ක් තබන්න."
+                }
+            },
+            5: {
+                name: {
+                    en: "Aloevera & Venivel Cleaning Bar",
+                    si: "කෝමාරිකා සහ වෙනිවෙල් පිරිසිදු කිරීමේ බාර්"
+                },
+                price: "LKR 470",
+                description: {
+                    en: "Soothing soap with Aloevera and Venivel for sensitive skin. This gentle cleansing bar is perfect for sensitive skin, providing hydration and calming irritation.",
+                    si: "සංවේදී සම සඳහා කෝමාරිකා සහ වෙනිවෙල් සහිත සන්සුන් කිරීමේ සබන්. මෙම මෘදු පිරිසිදු කිරීමේ බාර් සංවේදී සම සඳහා පරිපූර්ණය, තෙතමනය සපයයි සහ කිසිසේත්තාවය සන්සුන් කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Aloe Vera gel", "Venivel extract", "Coconut oil", "Oatmeal", "Chamomile extract"],
+                    si: ["කෝමාරිකා ජෙල්", "වෙනිවෙල් උද්ධ්‍රේක", "පොල් තෙල්", "ඕට්මීල්", "කැමොමයිල් උද්ධ්‍රේක"]
+                },
+                benefits: {
+                    en: ["Soothes sensitive skin", "Provides deep hydration", "Reduces redness and irritation", "Gentle enough for daily use", "Calms inflamed skin"],
+                    si: ["සංවේදී සම සන්සුන් කරයි", "ගැඹුරු තෙතමනය සපයයි", "රතු පැහැය සහ කිසිසේත්තාවය අඩු කරයි", "දිනපතා භාවිතය සඳහා ප්‍රමාණවත් ලෙස මෘදු වේ", "දැවිල්ලට ගිය සම සන්සුන් කරයි"]
+                },
+                usage: {
+                    en: "Wet the soap bar and create a gentle lather. Apply to face and body with light circular motions. Rinse thoroughly. Ideal for morning and evening cleansing routine.",
+                    si: "සබන් බාර් තෙත් කර මෘදු පිඟන් සාදා ගන්න. සැහැල්ලු වෘත්තාකාර චලනයන් වලින් මුහුණ සහ ශරීරයට යොදන්න. සම්පූර්ණයෙන් වතුර ගසා ගන්න. උදේ සහ සවස පිරිසිදු කිරීමේ චර්යාව සඳහා ඉතාමත් සුදුසුය."
+                }
+            },
+            6: {
+                name: {
+                    en: "Fairness Night Gel",
+                    si: "සුදුමැලි රාත්‍රි ජෙල්"
+                },
+                price: "LKR 850",
+                description: {
+                    en: "Overnight brightening gel for even skin tone. This night gel works while you sleep to repair and brighten your skin, giving you a more even complexion by morning.",
+                    si: "සමාන සම වර්ණය සඳහා රාත්‍රිය පුරා දීප්තිමත් කිරීමේ ජෙල්. මෙම රාත්‍රි ජෙල් ඔබ නිදන අතරතුර ක්‍රියා කර ඔබේ සම අලුත් කර දීප්තිමත් කරයි, උදේ වන විට වඩාත් සමාන සම වර්ණයක් ලබා දෙයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Licorice extract", "Vitamin C", "Niacinamide", "Hyaluronic acid", "Aloe Vera gel"],
+                    si: ["ලිකොරිස් උද්ධ්‍රේක", "විටමින් සී", "නියැසිනමයිඩ්", "හයලුරොනික් අම්ලය", "කෝමාරිකා ජෙල්"]
+                },
+                benefits: {
+                    en: ["Brightens skin tone overnight", "Reduces dark spots and pigmentation", "Hydrates and plumps skin", "Improves skin texture", "Non-greasy and lightweight"],
+                    si: ["රාත්‍රිය පුරා සම වර්ණය දීප්තිමත් කරයි", "අඳුරු පැල්ලම් සහ වර්ණකය අඩු කරයි", "සම තෙත් කර පිරුණු කරයි", "සමේ වයනය වැඩි දියුණු කරයි", "නොගිලිහෙන සහ සැහැල්ලු"]
+                },
+                usage: {
+                    en: "After cleansing, apply a thin layer of the gel to your face and neck before bedtime. Gently massage until absorbed. Use nightly for best results.",
+                    si: "පිරිසිදු කිරීමෙන් පසු, නිදා ගැනීමට පෙර ජෙල් තුනී ස්ථරයක් ඔබේ මුහුණට සහ බෙල්ලට යොදන්න. අවශෝෂණය වන තෙක් ප්‍රවේශමෙන් මසා දමන්න. හොඳම ප්‍රතිඵල සඳහා සෑම රාත්‍රියකම භාවිතා කරන්න."
+                }
+            },
+            7: {
+                name: {
+                    en: "Under Eye Sleeping Mask",
+                    si: "ඇස් යට නිදන මුහුණුවර"
+                },
+                price: "LKR 750",
+                description: {
+                    en: "Overnight treatment for dark circles and puffiness. This specialized mask targets the delicate under-eye area to reduce darkness and puffiness while you sleep.",
+                    si: "අඳුරු වළලු සහ පuff ුතතාවය සඳහා රාත්‍රිය පුරා ප්‍රතිකාර. මෙම විශේෂිත මුහුණුවර නිදන අතරතුර අඳුරු බව සහ පuff ුතතාවය අඩු කිරීම සඳහා සංවේදී ඇස් යට ප්‍රදේශය ඉලක්ක කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Caffeine", "Vitamin K", "Hyaluronic acid", "Cucumber extract", "Chamomile extract"],
+                    si: ["කැෆේින්", "විටමින් කේ", "හයලුරොනික් අම්ලය", "පිපිඤ්ඤා උද්ධ්‍රේක", "කැමොමයිල් උද්ධ්‍රේක"]
+                },
+                benefits: {
+                    en: ["Reduces dark circles", "Diminishes puffiness", "Hydrates under-eye area", "Smooths fine lines", "Cooling and soothing effect"],
+                    si: ["අඳුරු වළලු අඩු කරයි", "පuff ුතතාවය අඩු කරයි", "ඇස් යට ප්‍රදේශය තෙත් කරයි", "සියුම් රේඛා සුමට කරයි", "සිසිල් සහ සන්සුන් කිරීමේ බලපෑම"]
+                },
+                usage: {
+                    en: "Apply a small amount to clean under-eye area before bedtime. Gently pat until absorbed. Do not rinse off. Use 3-4 times per week or as needed.",
+                    si: "නිදා ගැනීමට පෙර පිරිසිදු ඇස් යට ප්‍රදේශයට ටිකක් ගෑම. අවශෝෂණය වන තෙක් ප්‍රවේශමෙන් පයට ගන්න. ගසා නොගන්න. සතියකට 3-4 වතාවක් හෝ අවශ්‍ය පරිදි භාවිතා කරන්න."
+                }
+            },
+            8: {
+                name: {
+                    en: "Coffee & Cinnamon Scrub with Pack",
+                    si: "කෝපි සහ කුරුඳු ස්ක්‍රබ් පැක් සමග"
+                },
+                price: "LKR 950",
+                description: {
+                    en: "Exfoliating scrub with Coffee and Cinnamon for smooth skin. This invigorating scrub removes dead skin cells and improves circulation for healthier-looking skin.",
+                    si: "සුමට සම සඳහා කෝපි සහ කුරුඳු සහිත ඉවත් කිරීමේ ස්ක්‍රබ්. මෙම බලවත් කරන ස්ක්‍රබ් මළ සම සෛල ඉවත් කර රුධිර සංසරණය වැඩි දියුණු කර වඩාත් සෞඛ්‍ය සම්පන්න පෙනුමක් ඇති සමක් ලබා දෙයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Coffee grounds", "Cinnamon powder", "Coconut oil", "Brown sugar", "Essential oils"],
+                    si: ["කෝපි ග්‍රව", "කුරුඳු පුඩි", "පොල් තෙල්", "Brown ළූණු", "අත්‍යවශ්‍ය තෙල්"]
+                },
+                benefits: {
+                    en: ["Exfoliates dead skin cells", "Stimulates blood circulation", "Reduces appearance of cellulite", "Improves skin texture", "Invigorating scent"],
+                    si: ["මළ සම සෛල ඉවත් කරයි", "රුධිර සංසරණය උත්තේජනය කරයි", "සෙලුලයිට් පෙනුම අඩු කරයි", "සමේ වයනය වැඩි දියුණු කරයි", "බලවත් කරන සුවඳ"]
+                },
+                usage: {
+                    en: "Apply to damp skin in circular motions, focusing on rough areas. Massage for 2-3 minutes then rinse. Use 2-3 times per week. Follow with moisturizer.",
+                    si: "වෘත්තාකාර චලනයන් වලින් තෙත් සමට යොදන්න, විනිවිද පෙනෙන ප්‍රදේශ වලට අවධානය යොමු කරන්න. විනාඩි 2-3 ක් මසා පසුව වතුර ගසා ගන්න. සතියකට 2-3 වතාවක් භාවිතා කරන්න. තෙතමනය කිරීමේ ක්‍රීම් සමඟ අනුගමනය කරන්න."
+                }
+            },
+            9: {
+                name: {
+                    en: "Golden Body Oil",
+                    si: "රන්වන් ශරීර තෙල්"
+                },
+                price: "LKR 1200",
+                description: {
+                    en: "Nourishing body oil with Turmeric for glowing skin. This luxurious oil absorbs quickly to provide deep hydration and a natural golden glow to your skin.",
+                    si: "දීප්තිමත් සම සඳහා කහ සහිත පෝෂණ ශරීර තෙල්. මෙම විලාසිතා සහිත තෙල් ඉක්මනින් අවශෝෂණය වී ගැඹුරු තෙතමනය සහ ස්වාභාවික රන්වන් දීප්තියක් ඔබේ සමට ලබා දෙයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Turmeric extract", "Saffron oil", "Jojoba oil", "Almond oil", "Vitamin E"],
+                    si: ["කහ උද්ධ්‍රේක", "කුංකුම තෙල්", "ජොජෝබා තෙල්", "ආමන්ඩ් තෙල්", "විටමින් ඊ"]
+                },
+                benefits: {
+                    en: ["Provides intense hydration", "Gives skin a golden glow", "Improves skin elasticity", "Reduces appearance of stretch marks", "Non-greasy formula"],
+                    si: ["තීව්‍ර තෙතමනය සපයයි", "සමට රන්වන් දීප්තියක් ලබා දෙයි", "සමේ නම්යශීලීභාවය වැඩි දියුණු කරයි", "විතන්න පෙනුම අඩු කරයි", "නොගිලිහෙන සූත්‍රය"]
+                },
+                usage: {
+                    en: "Apply to slightly damp skin after showering. Massage in upward circular motions until fully absorbed. Use daily for best results.",
+                    si: "ස්නානය කිරීමෙන් පසු තරමක් තෙත් සමට යොදන්න. සම්පූර්ණයෙන් අවශෝෂණය වන තෙක් ඉහළට යන වෘත්තාකාර චලනයන් වලින් මසා දමන්න. හොඳම ප්‍රතිඵල සඳහා දිනපතා භාවිතා කරන්න."
+                }
+            },
+            10: {
+                name: {
+                    en: "Ubtan Glowing Pack",
+                    si: "උබ්තන් දීප්තිමත් පැක්"
+                },
+                price: "LKR 650",
+                description: {
+                    en: "Traditional face pack for radiant and even skin tone. This Ubtan-based pack uses ancient Ayurvedic ingredients to cleanse, exfoliate, and brighten your skin naturally.",
+                    si: "දීප්තිමත් සහ සමාන සම වර්ණය සඳහා සාම්ප්‍රදායික මුහුණු පැක්. මෙම උබ්තන්-පදනම් කරගත් පැක් ඔබේ සම ස්වාභාවිකව පිරිසිදු කිරීම, ඉවත් කිරීම සහ දීප්තිමත් කිරීම සඳහා පුරාණ ආයුර්වේද අමුද්‍රව්‍ය භාවිතා කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Gram flour", "Turmeric powder", "Sandalwood powder", "Rose water", "Milk"],
+                    si: ["කජු පිටි", "කහ පුඩි", "සැන්ඩල් කොල්ලු පුඩි", "රෝස ජලය", "කිරි"]
+                },
+                benefits: {
+                    en: ["Deep cleanses and exfoliates", "Brightens skin complexion", "Reduces tan and pigmentation", "Soothes skin irritation", "Traditional Ayurvedic formula"],
+                    si: ["ගැඹුරුවෙන් පිරිසිදු කර ඉවත් කරයි", "සමේ වර්ණය දීප්තිමත් කරයි", "තද සහ වර්ණකය අඩු කරයි", "සමේ කිසිසේත්තාවය සන්සුන් කරයි", "සාම්ප්‍රදායික ආයුර්වේද සූත්‍රය"]
+                },
+                usage: {
+                    en: "Mix with water or rose water to form a paste. Apply evenly to face and neck, avoiding eye area. Leave on for 15-20 minutes then rinse with lukewarm water. Use 1-2 times per week.",
+                    si: "පේස්ට් එකක් සෑදීම සඳහා ජලය හෝ රෝස ජලය සමඟ මිශ්‍ර කරන්න. ඇස් ප්‍රදේශය ඉවත් කර මුහුණ සහ බෙල්ලට සමානව යොදන්න. මිනිත්තු 15-20 ක් තබා පසුව සිසිල් වතුරෙන් වතුර ගසා ගන්න. සතියකට 1-2 වතාවක් භාවිතා කරන්න."
+                }
+            },
+            11: {
+                name: {
+                    en: "Herbal Hair Oil",
+                    si: "ශාකමය හිසකෙස් තෙල්"
+                },
+                price: "LKR 850",
+                description: {
+                    en: "Nourishing hair oil with natural herbs for healthy hair. This traditional hair oil strengthens hair roots, promotes growth, and adds natural shine to your hair.",
+                    si: "සෞඛ්‍ය සම්පන්න හිසකෙස් සඳහා ස්වාභාවික ශාක සහිත පෝෂණ හිසකෙස් තෙල්. මෙම සාම්ප්‍රදායික හිසකෙස් තෙල් හිසකෙස් මුල් ශක්තිමත් කරයි, වර්ධනය ප්‍රවර්ධනය කරයි සහ ඔබේ හිසකෙස් වලට ස්වාභාවික දීප්තියක් එක් කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Coconut oil", "Brahmi extract", "Amla extract", "Hibiscus extract", "Fenugreek oil"],
+                    si: ["පොල් තෙල්", "බ්‍රහ්මි උද්ධ්‍රේක", "අම්ලා උද්ධ්‍රේක", "හිබිස්කස් උද්ධ්‍රේක", "උලුහාල් තෙල්"]
+                },
+                benefits: {
+                    en: ["Strengthens hair roots", "Promotes hair growth", "Reduces hair fall", "Prevents dandruff", "Adds natural shine"],
+                    si: ["හිසකෙස් මුල් ශක්තිමත් කරයි", "හිසකෙස් වර්ධනය ප්‍රවර්ධනය කරයි", "හිසකෙස් වැටීම අඩු කරයි", "කෙස් කුණු අවහිර කරයි", "ස්වාභාවික දීප්තිය එක් කරයි"]
+                },
+                usage: {
+                    en: "Apply to scalp and hair, gently massaging for 5-10 minutes. Leave on for at least 30 minutes or overnight for best results. Wash with a mild shampoo.",
+                    si: "හිස්තුවා සහ හිසකෙස් වලට යොදා, ප්‍රවේශමෙන් මසා 5-10 විනාඩි ගත කරන්න. හොඳම ප්‍රතිඵල සඳහා අවම වශයෙන් මිනිත්තු 30 ක් හෝ රාත්‍රිය පුරාවටම තබන්න. මෘදු ෂැම්පුවකින් සේදීම."
+                }
+            },
+            12: {
+                name: {
+                    en: "Anti Dandruff Shampoo",
+                    si: "කෙස් කුණු එරෙහි ෂැම්පු"
+                },
+                price: "LKR 680",
+                description: {
+                    en: "Natural shampoo to combat dandruff and scalp issues. This gentle yet effective shampoo cleanses your scalp while treating dandruff and preventing its recurrence.",
+                    si: "කෙස් කුණු සහ හිස්තුවා ගැටළු සමඟ සටන් කිරීමට ස්වාභාවික ෂැම්පු. මෙම මෘදු නමුත් ඵලදායී ෂැම්පු ඔබේ හිස්තුවා පිරිසිදු කරන අතරතුර කෙස් කුණු ප්‍රතිකාර කර එහි නැවත සිදුවීම අවහිර කරයි."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Neem extract", "Tea tree oil", "Aloe Vera", "Rosemary extract", "Lemon essential oil"],
+                    si: ["කොහොඹ උද්ධ්‍රේක", "තේ ගස් තෙල්", "කෝමාරිකා", "රොස්මරි උද්ධ්‍රේක", "දෙහි අත්‍යවශ්‍ය තෙල්"]
+                },
+                benefits: {
+                    en: ["Effectively treats dandruff", "Soothes itchy scalp", "Prevents dandruff recurrence", "Cleanses without stripping natural oils", "Promotes healthy scalp"],
+                    si: ["කෙස් කුණු ඵලදායී ලෙස ප්‍රතිකාර කරයි", "කුරුලෑ හිස්තුවා සන්සුන් කරයි", "කෙස් කුණු නැවත සිදුවීම අවහිර කරයි", "ස්වාභාවික තෙල් ඉවත් නොකර පිරිසිදු කරයි", "සෞඛ්‍ය සම්පන්න හිස්තුවා ප්‍රවර්ධනය කරයි"]
+                },
+                usage: {
+                    en: "Wet hair thoroughly. Apply shampoo to scalp and massage gently for 2-3 minutes. Rinse completely. For best results, use regularly 2-3 times per week.",
+                    si: "හිසකෙස් සම්පූර්ණයෙන් තෙත් කරන්න. ෂැම්පු හිස්තුවාට යොදා විනාඩි 2-3 ක් ප්‍රවේශමෙන් මසා දමන්න. සම්පූර්ණයෙන් වතුර ගසා ගන්න. හොඳම ප්‍රතිඵල සඳහා, සාමාන්‍යයෙන් සතියකට 2-3 වතාවක් භාවිතා කරන්න."
+                }
+            },
+            13: {
+                name: {
+                    en: "Goraka Churnaya",
+                    si: "ගොරකා චූර්ණය"
+                },
+                price: "LKR 550",
+                description: {
+                    en: "Traditional fat burning powder with Goraka. This Ayurvedic formulation helps in natural weight management by boosting metabolism and aiding digestion.",
+                    si: "ගොරකා සහිත සාම්ප්‍රදායික මේදය දහනය කිරීමේ පුඩි. මෙම ආයුර්වේද සූත්‍රය චයනය ඉහළ නැංවීමෙන් සහ ජීර්ණයට උපකාරී වීමෙන් ස්වාභාවික බර කළමනාකරණයට උපකාරී වේ."
+                },
+                images: [
+                    "https://images.unsplash.com/photo-1556228453-6ef89c63c269?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1594736797933-d0c1382d5a44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                ],
+                ingredients: {
+                    en: ["Goraka (Garcinia cambogia)", "Triphala", "Ginger powder", "Cinnamon powder", "Honey"],
+                    si: ["ගොරකා (ගාර්සිනියා කැම්බොජියා)", "ත්‍රිෆල", "ඉඟුරු පුඩි", "කුරුඳු පුඩි", "පැණි"]
+                },
+                benefits: {
+                    en: ["Supports natural weight management", "Boosts metabolism", "Aids digestion", "Natural appetite suppressant", "Traditional Ayurvedic formula"],
+                    si: ["ස්වාභාවික බර කළමනාකරණයට සහාය වේ", "චයනය ඉහළ නංවයි", "ජීර්ණයට උපකාරී වේ", "ස්වාභාවික ආහාර රුචිය අවහිර කරන්න", "සාම්ප්‍රදායික ආයුර්වේද සූත්‍රය"]
+                },
+                usage: {
+                    en: "Mix 1 teaspoon of powder with warm water or honey. Consume 30 minutes before meals, twice daily. For best results, combine with a balanced diet and regular exercise.",
+                    si: "පුඩි තේ හැන්දක් උණුසුම් ජලය හෝ පැණි සමඟ මිශ්‍ර කරන්න. ආහාර ගැනීමට මිනිත්තු 30 කට පෙර, දිනකට දෙවරක් භාවිතා කරන්න. හොඳම ප්‍රතිඵල සඳහා, සමබර ආහාර සහ නිත්‍ය ව්‍යායාම සමඟ ඒකාබද්ධ කරන්න."
+                }
+            }
+        };
+
+        // Language Toggle Functionality
+        const langEnBtn = document.getElementById('lang-en');
+        const langSiBtn = document.getElementById('lang-si');
+        const body = document.body;
+
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                body.classList.add('english-active');
+                body.classList.remove('sinhala-active');
+                langEnBtn.classList.add('active');
+                langSiBtn.classList.remove('active');
+                localStorage.setItem('selectedLang', 'en');
+            } else if (lang === 'si') {
+                body.classList.add('sinhala-active');
+                body.classList.remove('english-active');
+                langSiBtn.classList.add('active');
+                langEnBtn.classList.remove('active');
+                localStorage.setItem('selectedLang', 'si');
+            }
+        }
+
+        // Set initial language based on localStorage or default to English
+        const initialLang = localStorage.getItem('selectedLang') || 'en';
+        setLanguage(initialLang);
+
+        langEnBtn.addEventListener('click', () => setLanguage('en'));
+        langSiBtn.addEventListener('click', () => setLanguage('si'));
+        
+        // Dynamically add product IDs to product cards
+        document.querySelectorAll('.product-card').forEach(card => {
+            const productId = card.getAttribute('data-product');
+            const productIdFormatted = `B00${productId}`;
+            const productInfo = card.querySelector('.product-info');
+            if (productInfo) {
+                const idSpan = document.createElement('span');
+                idSpan.className = 'product-card-id';
+                idSpan.textContent = `ID: ${productIdFormatted}`;
+                // Insert before the description paragraphs
+                const firstParagraph = productInfo.querySelector('p');
+                if (firstParagraph) {
+                    productInfo.insertBefore(idSpan, firstParagraph);
+                } else {
+                    productInfo.appendChild(idSpan);
+                }
+            }
+        });
+
+        // Mobile Menu Functionality
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.add('active');
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.remove('active');
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.getElementById('mobile-nav').classList.remove('active');
+            });
+        });
+
+        // Product Filter Functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Get filter value
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Filter products
+                filterProducts(filterValue);
+            });
+        });
+
+        function filterProducts(category) {
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                    // Add animation
+                    card.style.animation = 'fadeInUp 0.5s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Product Modal Functionality
+        document.querySelectorAll('.see-more-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productId = this.getAttribute('data-product');
+                openProductModal(productId);
+            });
+        });
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            closeProductModal();
+        });
+
+        document.getElementById('product-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProductModal();
+            }
+        });
+
+        function openProductModal(productId) {
+            const product = products[productId];
+            if (!product) return;
+
+            // Set main product details
+            document.getElementById('modal-product-name').textContent = product.name.en;
+            document.getElementById('modal-product-name-si').textContent = product.name.si;
+            document.getElementById('modal-product-price').textContent = product.price;
+            document.getElementById('modal-product-id').textContent = `Product ID: B00${productId}`;
+            document.getElementById('modal-product-description').textContent = product.description.en;
+            document.getElementById('modal-product-description-si').textContent = product.description.si;
+            document.getElementById('modal-usage').textContent = product.usage.en;
+            document.getElementById('modal-usage-si').textContent = product.usage.si;
+
+            // Populate hidden fields in the order form
+            document.getElementById('form-product-name-en').value = product.name.en;
+            document.getElementById('form-product-name-si').value = product.name.si;
+            document.getElementById('form-product-id').value = `B00${productId}`;
+
+            // Reset form fields
+            document.getElementById('order-form').reset();
+            document.getElementById('quantity').value = 1; // Ensure quantity defaults to 1
+
+            // Set main image
+            document.getElementById('modal-main-image').src = product.images[0];
+
+            // Create thumbnails
+            const thumbnailsContainer = document.getElementById('image-thumbnails');
+            thumbnailsContainer.innerHTML = '';
+            
+            product.images.forEach((image, index) => {
+                const thumbnail = document.createElement('div');
+                thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
+                thumbnail.innerHTML = `<img src="${image}" alt="Product Image ${index + 1}">`;
+                thumbnail.addEventListener('click', () => {
+                    document.getElementById('modal-main-image').src = image;
+                    document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+                    thumbnail.classList.add('active');
+                });
+                thumbnailsContainer.appendChild(thumbnail);
+            });
+
+            // Set ingredients
+            const ingredientsEn = document.getElementById('modal-ingredients');
+            ingredientsEn.innerHTML = '';
+            product.ingredients.en.forEach(ingredient => {
+                const li = document.createElement('li');
+                li.textContent = ingredient;
+                ingredientsEn.appendChild(li);
+            });
+
+            const ingredientsSi = document.getElementById('modal-ingredients-si');
+            ingredientsSi.innerHTML = '';
+            product.ingredients.si.forEach(ingredient => {
+                const li = document.createElement('li');
+                li.textContent = ingredient;
+                ingredientsSi.appendChild(li);
+            });
+
+            // Set benefits
+            const benefitsEn = document.getElementById('modal-benefits');
+            benefitsEn.innerHTML = '';
+            product.benefits.en.forEach(benefit => {
+                const li = document.createElement('li');
+                li.textContent = benefit;
+                benefitsEn.appendChild(li);
+            });
+
+            const benefitsSi = document.getElementById('modal-benefits-si');
+            benefitsSi.innerHTML = '';
+            product.benefits.si.forEach(benefit => {
+                const li = document.createElement('li');
+                li.textContent = benefit;
+                benefitsSi.appendChild(li);
+            });
+
+            // Show modal
+            document.getElementById('product-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductModal() {
+            document.getElementById('product-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('active');
+            } else {
+                scrollToTopBtn.classList.remove('active');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // WhatsApp Order Functionality
+        document.getElementById('order-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('full-name').value;
+            const homeAddress = document.getElementById('home-address').value;
+            const mobileNumber = document.getElementById('mobile-number').value;
+            const quantity = document.getElementById('quantity').value;
+            const productNameEn = document.getElementById('form-product-name-en').value;
+            const productNameSi = document.getElementById('form-product-name-si').value;
+            const productId = document.getElementById('form-product-id').value;
+
+            const selectedLang = localStorage.getItem('selectedLang') || 'en';
+
+            let message;
+            if (selectedLang === 'en') {
+                message = `Hello ARYUU HERBZ, I would like to order the following product:\n\n` +
+                          `Product Name: ${productNameEn}\n` +
+                          `Product ID: ${productId}\n` +
+                          `Quantity: ${quantity}\n` +
+                          `Full Name: ${fullName}\n` +
+                          `Home Address: ${homeAddress}\n` +
+                          `Mobile Number: ${mobileNumber}\n\n` +
+                          `Please confirm my order. Thank you!`;
+            } else {
+                message = `ආයුබෝවන් ARYUU HERBZ, මට පහත නිෂ්පාදනය ඇණවුම් කිරීමට අවශ්‍යයි:\n\n` +
+                          `නිෂ්පාදන නම: ${productNameSi}\n` +
+                          `නිෂ්පාදන හැඳුනුම්පත: ${productId}\n` +
+                          `ප්‍රමාණය: ${quantity}\n` +
+                          `සම්පූර්ණ නම: ${fullName}\n` +
+                          `නිවසේ ලිපිනය: ${homeAddress}\n` +
+                          `ජංගම දුරකථන අංකය: ${mobileNumber}\n\n` +
+                          `කරුණාකර මගේ ඇණවුම තහවුරු කරන්න. ස්තූතියි!`;
+            }
+
+            const whatsappUrl = `https://wa.me/94715533319?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+
+            closeProductModal(); // Close the modal after sending the order
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
